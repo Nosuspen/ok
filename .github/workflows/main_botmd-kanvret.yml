@@ -36,13 +36,5 @@ jobs:
           npm run build --if-present
           npm run test --if-present
           pm2 start index.js
-          popd
-
-      - name: 'Run Azure Functions Action'
-        uses: Azure/functions-action@v1
-        id: fa
-        with:
-          app-name: 'botmd-kanvret'
-          slot-name: 'Production'
-          package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2CC4B36091BF420A80BD9CB639BD8589 }}
+          pm2 save
+          pm2 link 4iyewdf5vhr0cf7 flg2w4ch6euu4p6
