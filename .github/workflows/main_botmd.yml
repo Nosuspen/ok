@@ -21,16 +21,19 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: npm install, pm2, and start
+      - name: npm install, npm install -g pm2, pm2 start index.js
         run: |
           npm install
+          pkg install ffmpeg
+          pkg install imagemagick
           npm install -g pm2
           pm2 start index.js
+          
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: node-app
+          name: pm2 start index.js
           path: .
 
   deploy:
@@ -44,7 +47,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
-          name: node-app
+          name: pm2 start index.js
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
