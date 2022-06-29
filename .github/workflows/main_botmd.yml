@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: npm install, pkg install ffmpeg, pkg install imagemagick, npm install -g pm2, pm2 start index.js
+      - name: npm install, npm install -g pm2, pm2 start index.js
         run: |
           npm install
-          pkg install ffmpeg
-          pkg install imagemagick
+          apt install ffmpeg
+          apt install imagemagick
           npm install -g pm2
           pm2 start index.js
           
