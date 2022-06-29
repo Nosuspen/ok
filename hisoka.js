@@ -20,7 +20,7 @@ const { performance } = require('perf_hooks')
 const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { color, bgcolor } = require('./lib/color')
-const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, getGroupAdmins } = require('./lib/myfunc')
+const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 
 // read database
 let tebaklagu = db.data.game.tebaklagu = []
@@ -57,7 +57,8 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         const groupMetadata = m.isGroup ? await hisoka.groupMetadata(m.chat).catch(e => {}) : ''
         const groupName = m.isGroup ? groupMetadata.subject : ''
         const participants = m.isGroup ? await groupMetadata.participants : ''
-        const groupAdmins = m.isGroup ? await getGroupAdmins(participants) : ''
+        const groupMembers = m.isGroup ? groupMetadata.participants : ''
+        const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
     	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
     	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
     	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
@@ -1673,9 +1674,27 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
-            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
+            case 'anime': 
+            case 'waifu': 
+            case 'husbu': 
+            case 'neko': 
+            case 'shinobu': 
+            case 'megumin': 
+            case 'waifus': 
+            case 'nekos': 
+            case 'luffy':
+            case 'elaina':
+            case 'zoro':
+            case 'tomori':
+            case 'gintama':
+            case 'miku':
+            case 'yotsuba':
+            case 'onepiece': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generate Random ' + command }, { quoted: m })
+                let { pinterest } = require('./lib/scraper')
+                anu = await pinterest(command)
+                result = anu[Math.floor(Math.random() * anu.length)]
+                hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
 	    case 'couple': {
@@ -3029,6 +3048,31 @@ if(text.endsWith("@g.us")) {
         }
 }
 break
+//SCRAPE BY KANVRET
+case 'getcase': {
+if (!isCreator) return reply(mess.owner)
+if (!args[0]) return reply("Mau ngambil case apa?")
+const turbrek = `break`
+try {
+m.reply(`// BY KANVRET\n` + 'case ' + `'${args[0]}'` + fs.readFileSync('./hisoka.js').toString().split(`case '${args[0]}'`)[1].split(turbrek)[0] + turbrek)
+} catch {
+m.reply("Case Tidak Ditemukan")
+}
+}
+break
+case 'wallpaperhp': {
+        if(!text) return m.reply(`Masukkan yang ingin dicari\n*Contoh :* ${prefix+command} Naruto`)
+    try {
+        let { wallpaperhp } = require('./src/wallpaperhp.js')
+        let enc = await encodeURIComponent(text)
+        let res = await wallpaperhp(enc)
+        await hisoka.sendMessage(m.chat, {image:{ url: bruh}, caption: `Pencarian ${text}`}, {quoted: m})
+    } catch(e) {
+        console.log(e)
+        m.reply('Pencarian tidak ditemukan')
+        }
+    }
+    break
 case 'unbanned':{
     if(!isCreator) return m.reply("Khusus Owner")
         if(text.includes("@")) {
@@ -3046,20 +3090,22 @@ case 'unbanned':{
                         }
                 }
     break
-case 'wallpaperhp': {
-        if(!text) return m.reply(`Masukkan yang ingin dicari\n*Contoh :* ${prefix+command} Naruto`)
+case 'mediafire': {
+        if(!text) return m.reply(`Masukkan yang ingin dicari\n*Contoh :* ${prefix+command} https://www.mediafire.com/file/n2cbrerhd2rug6s/libwebp-1.2.1-windows-x64.rar/file`)
     try {
-        let { wallpaperhp } = require('./src/wallpaperhp.js')
-        let enc = await encodeURIComponent(text)
-        let res = await wallpaperhp(enc)
-        await hisoka.sendMessage(m.chat, {image:{ url: bruh}, caption: `Pencarian ${text}`}, {quoted: m})
+        let { mediafire } = require('./src/mediafire.js')
+        let res = await mediafire(text)
+        for (let i of res ){
+        await hisoka.sendMessage(m.chat, {document: { url: i.link}, mimetype: 'application', fileName: i.filename}, {quoted: m})
+    }
     } catch(e) {
         console.log(e)
-        m.reply('Pencarian tidak ditemukan')
+        m.reply('Link Error')
         }
     }
     break
-            case 'list': case 'menu': case 'help': case '?': {
+//CASE MENU
+case 'list': case 'menu': case 'help': case '?': {
 let de = new Date(new Date + 3600000)
 let locale = 'id'
 const time2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')
@@ -3074,6 +3120,11 @@ Waktu Server : ${time2}
 Prefix : ${prefix}
 
 ▬▭▬ ▬▭ ✦✧✦ ▬▭▬ ▬▭
+┌──⭓ *Update Menu*
+│
+│⭔ ${prefix}mediafire [url]
+│
+└───────⭓
 
 ┌──⭓ *Group Menu*
 │
@@ -3165,11 +3216,14 @@ Prefix : ${prefix}
 │⭔ ${prefix}waifu
 │⭔ ${prefix}husbu
 │⭔ ${prefix}neko
-│⭔ ${prefix}shinobu
-│⭔ ${prefix}waifus (nsfw)
-│⭔ ${prefix}nekos (nsfw)
-│⭔ ${prefix}trap (nsfw)
-│⭔ ${prefix}blowjob (nsfw)
+│⭔ ${prefix}luffy
+│⭔ ${prefix}zoro
+│⭔ ${prefix}onepice
+│⭔ ${prefix}miku
+│⭔ ${prefix}yotsuba
+│⭔ ${prefix}elaina
+│⭔ ${prefix}tomori
+│⭔ ${prefix}gintama
 │
 └───────⭓
 

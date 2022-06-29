@@ -248,8 +248,8 @@ const start = async () => {
         if (statusCode === DisconnectReason.badSession) { log(`Bad session file, delete ${session} and run again`); start(); }
         else if (statusCode === DisconnectReason.connectionClosed) { log('Connection closed, reconnecting....'); start() }
         else if (statusCode === DisconnectReason.connectionLost) { log('Connection lost, reconnecting....'); start() }
-        else if (statusCode === DisconnectReason.connectionReplaced) { log('Connection Replaced, Another New Session Opened, Please Close Current Session First'); process.exit() }
-        else if (statusCode === DisconnectReason.loggedOut) { log(`Device Logged Out, Please Delete ${session} and Scan Again.`); process.exit(); }
+        else if (statusCode === DisconnectReason.connectionReplaced) { log('Connection Replaced, Another New Session Opened, Please Close Current Session First'); start() }
+        else if (statusCode === DisconnectReason.loggedOut) { log(`Device Logged Out, Please Delete ${session} and Scan Again.`); start(); }
         else if (statusCode === DisconnectReason.restartRequired) { log('Restart required, restarting...'); start(); }
         else if (statusCode === DisconnectReason.timedOut) { log('Connection timedOut, reconnecting...'); start(); }
         else {
@@ -330,7 +330,7 @@ var image = await new knights.Welcome()
   await fs.writeFileSync(pathw, data)
   }
 await salma()
-hisoka.sendMessage(anu.id, {text: capti, contextInfo: {mentionedJid: [num], externalAdReply: {mediaUrl: `https://whatsapp.com/${gon}`, sourceUrl: `https://whatsapp.com/${gon}`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync('./ouuti.png')}}})
+hisoka.sendImage(anu.id, 'ouuti.png', capti)
       } else if (anu.action == 'remove') {
         var pathl = 'Leaving.png'
                 gon = gen(123456)
@@ -350,7 +350,7 @@ var image = await new knights.Leave()
   await fs.writeFileSync(pathl, data)
   }
 await salma()
-hisoka.sendMessage(anu.id, {text: capti1, contextInfo: {mentionedJid: [num], externalAdReply: {mediaUrl: `https://whatsapp.com/${gon}`, sourceUrl: `https://whatsapp.com/${gon}`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync('./Leaving.png')}}})
+hisoka.sendImage(anu.id, 'Leaving.png', capti1)
                 }
             }
         } catch (err) {
