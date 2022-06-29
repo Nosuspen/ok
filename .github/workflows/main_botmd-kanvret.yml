@@ -30,7 +30,7 @@ jobs:
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm install
-          npm i -g pm2
+          npm install -g pm2
           sudo apt install ffmpeg
           sudo apt install imagemagick
           npm run build --if-present
