@@ -23,6 +23,7 @@ const { color, bgcolor } = require('./lib/color')
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 
 // read database
+let autovn = true
 let tebaklagu = db.data.game.tebaklagu = []
 let _family100 = db.data.game.family100 = []
 let kuismath = db.data.game.math = []
@@ -117,7 +118,9 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         if (!hisoka.public) {
             if (!m.key.fromMe) return
         }
-
+   if (autovn){
+          hisoka.updatePresence(i.jid, Presence.recording)
+                   }
         // Push Message To Console && Auto Read
         if (m.message) {
         console.log('\x1b[1;34m~\x1b[1;37m>', '[\x1b[1;33mCMD\x1b[1;37m]', time,              color(`${prefix + command} [${args.length}]`, 'cyan'), 'from', color(m.      pushName), 'in', color(groupName, 'orange'))
