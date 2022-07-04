@@ -119,7 +119,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
             if (!m.key.fromMe) return
         }
    if (autovn){
-          hisoka.updatePresence(i.jid, Presence.recording)
+          hisoka.updatePresence(m.chat, Presence.composing)                 
                    }
         // Push Message To Console && Auto Read
         if (m.message) {
