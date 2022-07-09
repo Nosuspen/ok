@@ -3494,7 +3494,7 @@ break
 case 'troli': {
 	if (!isCreator) return
 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
-	var troli = generateWAMessageFromContent(m.chat,{
+	let troli = generateWAMessageFromContent(m.chat,{
 
 	"orderMessage": {
  
