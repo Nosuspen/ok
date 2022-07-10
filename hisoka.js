@@ -3653,7 +3653,7 @@ a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe
 	break
 case 'bugbutton': 
 if(!isCreator) return m.reply("Khusus Owner")
-            let buttons = [
+let buttons = [
 {buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
                 ]
                 let buttonMessage = {
@@ -3669,7 +3669,7 @@ if(!isCreator) return m.reply("Khusus Owner")
 ⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
 ⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ${virtex1(prefix)}`,
-                    footer: "COK"
+                    footer: virtex1,
                     buttons: buttons,
                     headerType: 4
                 }
