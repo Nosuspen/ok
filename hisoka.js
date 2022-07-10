@@ -3652,7 +3652,7 @@ a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe
 	}
 	break
 case 'bugbutton': 
-if(!isCreator) return m.reply("Khusus Owner") {
+if(!isCreator) return m.reply("Khusus Owner")
             let buttons = [
 {buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
                 ]
@@ -3677,7 +3677,7 @@ ${virtex1(prefix)}`,
             }
             break
 case 'sendreaksi' :
-if(!isCreator) return m.reply("Khusus Owner") {
+if(!isCreator) return m.reply("Khusus Owner") 
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                 await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
@@ -3710,7 +3710,7 @@ m.reply(`SUCCES`)
             }
                 break
 case 'colidek' : 
-if(!isCreator) return m.reply("Khusus Owner") {
+if(!isCreator) return m.reply("Khusus Owner") 
                     a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
