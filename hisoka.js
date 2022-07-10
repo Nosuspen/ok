@@ -3111,8 +3111,7 @@ let locale = 'id'
 const time2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 let date = de.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'})
 let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', second: 'numeric'})
-                main = `
-╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+                main = `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
 ┃Lɪʙʀᴀʀʏ: Baileys-Md
 ┃Tᴀɴɢɢᴀʟ Sᴇᴠᴇʀ: ${date}
 ┃Wᴀᴋᴛᴜ Sᴇᴠᴇʀ: ${time2}
@@ -3392,7 +3391,7 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
 ⁙┃〲◦➛${prefix}ʙᴄᴀʟʟ [ᴛᴇxᴛ]
 ⁙┃〲◦➛${prefix}ꜱᴇᴛᴘᴘʙᴏᴛ [ɪᴍᴀɢᴇ]
 ⁙┃〲◦➛${prefix}ꜱᴇᴛᴇxɪꜰ
-⁙┃〲◦➛${prefix}ꜱᴇᴛᴍᴇɴᴜ [ᴏᴘᴛɪᴏɴ]`
+⁙┃〲◦➛${prefix}ꜱᴇᴛᴍᴇɴᴜ [ᴏᴘᴛɪᴏɴ]
 ▬▭▬ ▬▭ ✦✧✦ ▬▭▬ ▬▭`
                 let btn = [{
                                 urlButton: {
