@@ -87,14 +87,14 @@ const { state, saveState } = useSingleFileAuthState(session);
 require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
 const start = async () => {
     // LOAD PLUGINS
-    CFonts.say(`SHIELD`, {
+    CFonts.say(`HANZ OFC`, {
         font: 'shade',
         align: 'center',
         gradient: ['#12c2e9', '#c471ed'],
         transitionGradient: true,
         letterSpacing: 3,
     });
-    CFonts.say(`'SHIELD' Coded By Sauma`, {
+    CFonts.say(`'HANZ OFC' Coded By Haris Setiawan`, {
         font: 'console',
         align: 'center',
         gradient: ['#DCE35B', '#45B649'],
@@ -107,7 +107,7 @@ const start = async () => {
         printQRInTerminal: true,
         logger: pino({ level: 'silent' }),
         auth: state,
-        browser: ['SHIELD - MD','Safari','1.0.0']
+        browser: ['HANZ OFC-MD','Safari','1.0.0']
     });
     global.hisoka = hisoka
 
@@ -305,18 +305,18 @@ function gen(length) {
                     var pathw = 'ouuti.png'
                 gon = gen(123456)
            /*     namanya = hisoka.getName(num)*/
-               capti = `*Selamat datang di grup*
-*${metadata.subject.replace(/[\n]/g, ' ')}*
-
-Halo @${num.split("@")[0]}
-Perkenalkan diri anda
-
-*Nama Panggilan:* ...
-*Asal kota:* ...
-*Umur:* ...
-
-*Baca rules grup!!!*
-Member Group: ${metadata.participants.length}`
+               capti = `*
+Halo @${num.split("@")[0]} \nWelcome In *${metadata.subject.replace(/[\n]/g, ' ')}*
+\n
+ɴᴀᴍᴀ:
+ᴀꜱᴀʟ:
+ᴋᴏᴛᴀ:
+ᴘᴀꜱᴀɴɢᴀɴ:
+ᴀʟᴀꜱᴀɴ ɢᴀʙᴜɴɢ:
+▬▭▬▭▬▭▬▭▬▬▭▬▭▬
+ₛᵤBₛCᵣᵢBₑ
+https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+▬▭▬▭▬▭▬▭▬▬▭▬▭▬`
 
 salma = async () => {
 var knights = require('./lib/knights-canvas')
@@ -336,7 +336,15 @@ hisoka.sendImage(anu.id, 'ouuti.png', capti)
         var pathl = 'Leaving.png'
                 gon = gen(123456)
            /*     namanya = hisoka.getName(num)*/
-                capti1 = `*@${num.split("@")[0]} Keluar Dari ${metadata.subject.replace(/[\n]/g, ' ')}*`
+                capti1 = `*
+                Bayy Beban✌
+ɴᴀᴍᴀ: @${num.split("@")[0]}
+ɢʀᴏᴜᴘ: ${metadata.subject.replace(/[\n]/g, ' ')}
+ᴍᴇᴍʙᴇʀ: ${metadata.participants.length}
+▬▭▬▭▬▭▬▭▬▬▭▬▭▬
+ₛᵤBₛCᵣᵢBₑ
+https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+▬▭▬▭▬▭▬▭▬▬▭▬▭▬`
 
 salma = async () => {
 var knights = require('./lib/knights-canvas')
