@@ -3534,26 +3534,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:floc})
-let f = { 
-key: { 
-fromMe: false, 
-participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
-},
-message: { 
-"productMessage": { 
-"product": { 
-"productImage":{ 
-"mimetype": "image/jpeg", 
-"jpegThumbnail": fs.readFileSync(`./menu1.jpeg`)}, 
-"title": HANZ々OFC彡, 
-"description": "HANZ々OFC彡", 
-"currencyCode": "USD", 
-"priceAmount1000": "5000000000", 
-"retailerId": "hanz", 
-"productImageCount": 1}, 
-"businessOwnerJid": `6285737134572@s.whatsapp.net`}}}	
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:f})
-break
+break 
 case 'troli': {
 	if (!isCreator) return
 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
