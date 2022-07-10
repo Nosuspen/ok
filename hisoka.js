@@ -3477,22 +3477,8 @@ Prefix : ${prefix}
                             hisoka.send5ButLoc(m.chat, anu, "@SHIELD-BOT", fs.readFileSync('./menu1.jpeg'), btn)
                      }
             break
-case 'bugv2':
-let anu = { 
-key: { 
-fromMe: false, 
-remoteJid: "", 
-participant: '0@s.whatsapp.net'}, 
-message: { 
-videoMessage: { 
-viewOnce: true
-},
-},
-};
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:anu})
-break
 case 'bug':
-let anu = { 
+let foto = { 
         key: { 
             fromMe: false, 
             participant: `0@s.whatsapp.net`, 
@@ -3506,7 +3492,7 @@ let anu = {
             } 
         } 
     }
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"}, {quoted:anu})
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"}, {quoted:foto})
 let fvoc = {
 key: { 
 fromMe: false,
