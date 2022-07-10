@@ -3537,8 +3537,8 @@ hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡"},{quoted:floc})
 let f = { 
 key: { 
 fromMe: false, 
-participant: `0@s.whatsapp.net`, 
-...({ remoteJid: "" } : {}) },
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
 message: { 
 "productMessage": { 
 "product": { 
