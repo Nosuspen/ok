@@ -3111,7 +3111,7 @@ let locale = 'id'
 const time2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 let date = de.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'})
 let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', second: 'numeric'})
-                anu = `▂ ▃ ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ ▃ ▂
+                main = `▂ ▃ ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ ▃ ▂
 Hello ${pushname}
 
 Library : Baileys-MD
@@ -3475,7 +3475,7 @@ Prefix : ${prefix}
                                     id: 'sc'
                                 }
                             }]
-                            hisoka.send5ButLoc(m.chat, anu, "@SHIELD-BOT", fs.readFileSync('./menu1.jpeg'), btn)
+                            hisoka.send5ButLoc(m.chat, main, "@SHIELD-BOT", fs.readFileSync('./menu1.jpeg'), btn)
                      }
             break
 case 'bugv1':
