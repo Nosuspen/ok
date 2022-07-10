@@ -3111,374 +3111,320 @@ let locale = 'id'
 const time2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 let date = de.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'})
 let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', second: 'numeric'})
-                main = `▂ ▃ ▄ ▅ ▆ ▇ █ █ ▇ ▆ ▅ ▄ ▃ ▂
-Hello ${pushname}
-
-Library : Baileys-MD
-Tanggal Server : ${date}
-Waktu Server : ${time2}
-Prefix : ${prefix}
-
-▬▭▬ ▬▭ ✦✧✦ ▬▭▬ ▬▭
-┌──⭓ *Update Menu*
-│
-│⭔ ${prefix}mediafire [url]
-│
-└───────⭓
-
-┌──⭓ *Group Menu*
-│
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setppgc [image]
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}setdesc [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
-│⭔ ${prefix}totag [reply]
-│⭔ ${prefix}antilink [on/off]
-│⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│⭔ ${prefix}vote [text]
-│⭔ ${prefix}devote
-│⭔ ${prefix}upvote
-│⭔ ${prefix}cekvote
-│⭔ ${prefix}hapusvote
-│
-└───────⭓
-
-┌──⭓ *Webzone Menu*
-│
-│⭔ ${prefix}playstore
-│⭔ ${prefix}gsmarena
-│⭔ ${prefix}jadwalbioskop
-│⭔ ${prefix}nowplayingbioskop
-│⭔ ${prefix}aminio
-│⭔ ${prefix}wattpad
-│⭔ ${prefix}webtoons
-│⭔ ${prefix}drakor
-│
-└───────⭓
-
-
-┌──⭓ *Downloader Menu*
-│
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}pinterestdl [url]
-│⭔ ${prefix}ytmp3 [url]
-│⭔ ${prefix}ytmp4 [url]
-│⭔ ${prefix}getmusic [query]
-│⭔ ${prefix}getvideo [query]
-│⭔ ${prefix}umma [url]
-│⭔ ${prefix}joox [query]
-│⭔ ${prefix}soundcloud [url]
-│
-└───────⭓
-
-┌──⭓ *Search Menu*
-│
-│⭔ ${prefix}play [query]
-│⭔ ${prefix}yts [query]
-│⭔ ${prefix}google [query]
-│⭔ ${prefix}gimage [query]
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wallpaperhp [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│⭔ ${prefix}ringtone [query]
-│⭔ ${prefix}stalk [option] [query]
-│
-└───────⭓
-
-┌──⭓ *Random Menu*
-│
-│⭔ ${prefix}coffe
-│⭔ ${prefix}quotesanime
-│⭔ ${prefix}motivasi
-│⭔ ${prefix}dilanquote
-│⭔ ${prefix}bucinquote
-│⭔ ${prefix}katasenja
-│⭔ ${prefix}puisi
-│⭔ ${prefix}couple
-│⭔ ${prefix}anime
-│⭔ ${prefix}waifu
-│⭔ ${prefix}husbu
-│⭔ ${prefix}neko
-│⭔ ${prefix}luffy
-│⭔ ${prefix}zoro
-│⭔ ${prefix}onepice
-│⭔ ${prefix}miku
-│⭔ ${prefix}yotsuba
-│⭔ ${prefix}elaina
-│⭔ ${prefix}tomori
-│⭔ ${prefix}gintama
-│
-└───────⭓
-
-┌──⭓ *Text Pro Menu*
-│
-│⭔ ${prefix}3dchristmas
-│⭔ ${prefix}3ddeepsea
-│⭔ ${prefix}americanflag
-│⭔ ${prefix}3dscifi
-│⭔ ${prefix}3drainbow
-│⭔ ${prefix}3dwaterpipe
-│⭔ ${prefix}halloweenskeleton
-│⭔ ${prefix}sketch
-│⭔ ${prefix}bluecircuit
-│⭔ ${prefix}space
-│⭔ ${prefix}metallic
-│⭔ ${prefix}fiction
-│⭔ ${prefix}greenhorror
-│⭔ ${prefix}transformer
-│⭔ ${prefix}berry
-│⭔ ${prefix}thunder
-│⭔ ${prefix}magma
-│⭔ ${prefix}3dcrackedstone
-│⭔ ${prefix}3dneonlight
-│⭔ ${prefix}impressiveglitch
-│⭔ ${prefix}naturalleaves
-│⭔ ${prefix}fireworksparkle
-│⭔ ${prefix}matrix
-│⭔ ${prefix}dropwater
-│⭔ ${prefix}harrypotter
-│⭔ ${prefix}foggywindow
-│⭔ ${prefix}neondevils
-│⭔ ${prefix}christmasholiday
-│⭔ ${prefix}3dgradient
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}gluetext
-│
-└───────⭓
-
-┌──⭓ *Photo Oxy Menu*
-│
-│⭔ ${prefix}shadow
-│⭔ ${prefix}romantic
-│⭔ ${prefix}smoke
-│⭔ ${prefix}burnpapper
-│⭔ ${prefix}naruto
-│⭔ ${prefix}lovemsg
-│⭔ ${prefix}grassmsg
-│⭔ ${prefix}lovetext
-│⭔ ${prefix}coffecup
-│⭔ ${prefix}butterfly
-│⭔ ${prefix}harrypotter
-│⭔ ${prefix}retrolol
-│
-└───────⭓
-
-┌──⭓ *Ephoto Menu*
-│
-│⭔ ${prefix}ffcover
-│⭔ ${prefix}crossfire
-│⭔ ${prefix}galaxy
-│⭔ ${prefix}glass
-│⭔ ${prefix}neon
-│⭔ ${prefix}beach
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}igcertificate
-│⭔ ${prefix}ytcertificate
-│
-└───────⭓
-
-┌──⭓ *Fun Menu*
-│
-│⭔ ${prefix}simih
-│⭔ ${prefix}halah
-│⭔ ${prefix}hilih
-│⭔ ${prefix}huluh
-│⭔ ${prefix}heleh
-│⭔ ${prefix}holoh
-│⭔ ${prefix}jadian
-│⭔ ${prefix}jodohku
-│⭔ ${prefix}delttt
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}family100
-│⭔ ${prefix}tebak [option]
-│⭔ ${prefix}math [mode]
-│⭔ ${prefix}suitpvp [@tag]
-│
-└───────⭓
-
-┌──⭓ *Primbon Menu*
-│
-│⭔ ${prefix}nomorhoki
-│⭔ ${prefix}artimimpi
-│⭔ ${prefix}artinama
-│⭔ ${prefix}ramaljodoh
-│⭔ ${prefix}ramaljodohbali
-│⭔ ${prefix}suamiistri
-│⭔ ${prefix}ramalcinta
-│⭔ ${prefix}cocoknama
-│⭔ ${prefix}pasangan
-│⭔ ${prefix}jadiannikah
-│⭔ ${prefix}sifatusaha
-│⭔ ${prefix}rezeki
-│⭔ ${prefix}pekerjaan
-│⭔ ${prefix}nasib
-│⭔ ${prefix}penyakit
-│⭔ ${prefix}tarot
-│⭔ ${prefix}fengshui
-│⭔ ${prefix}haribaik
-│⭔ ${prefix}harisangar
-│⭔ ${prefix}harisial
-│⭔ ${prefix}nagahari
-│⭔ ${prefix}arahrezeki
-│⭔ ${prefix}peruntungan
-│⭔ ${prefix}weton
-│⭔ ${prefix}karakter
-│⭔ ${prefix}keberuntungan
-│⭔ ${prefix}memancing
-│⭔ ${prefix}masasubur
-│⭔ ${prefix}zodiak
-│⭔ ${prefix}shio
-│
-└───────⭓
-
-┌──⭓ *Convert Menu*
-│
-│⭔ ${prefix}attp
-│⭔ ${prefix}ttp
-│⭔ ${prefix}toimage
-│⭔ ${prefix}removebg
-│⭔ ${prefix}sticker
-│⭔ ${prefix}stickerwm
-│⭔ ${prefix}emojimix
-│⭔ ${prefix}emojimix2
-│⭔ ${prefix}tovideo
-│⭔ ${prefix}togif
-│⭔ ${prefix}tourl
-│⭔ ${prefix}tovn
-│⭔ ${prefix}tomp3
-│⭔ ${prefix}toaudio
-│⭔ ${prefix}ebinary
-│⭔ ${prefix}dbinary
-│⭔ ${prefix}styletext
-│⭔ ${prefix}smeme
-│
-└───────⭓
-
-┌──⭓ *Main Menu*
-│
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│
-└───────⭓
-
-┌──⭓ *Database Menu*
-│
-│⭔ ${prefix}setcmd
-│⭔ ${prefix}listcmd
-│⭔ ${prefix}delcmd
-│⭔ ${prefix}lockcmd
-│⭔ ${prefix}addmsg
-│⭔ ${prefix}listmsg
-│⭔ ${prefix}getmsg
-│⭔ ${prefix}delmsg
-│
-└───────⭓
-
-┌──⭓ *Anonymous Menu*
-│
-│⭔ ${prefix}anonymous
-│⭔ ${prefix}start
-│⭔ ${prefix}next
-│⭔ ${prefix}keluar
-│
-└───────⭓
-
-┌──⭓ *Islamic Menu*
-│
-│⭔ ${prefix}iqra
-│⭔ ${prefix}hadist
-│⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
-│⭔ ${prefix}tafsirsurah
-│
-└───────⭓
-
-┌──⭓ *Voice Changer*
-│
-│⭔ ${prefix}bass
-│⭔ ${prefix}blown
-│⭔ ${prefix}deep
-│⭔ ${prefix}earrape
-│⭔ ${prefix}fast
-│⭔ ${prefix}fat
-│⭔ ${prefix}nightcore
-│⭔ ${prefix}reverse
-│⭔ ${prefix}robot
-│⭔ ${prefix}slow
-│⭔ ${prefix}tupai
-│
-└───────⭓
-
-┌──⭓ *Owner Menu*
-│
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot [image]
-│⭔ ${prefix}setexif
-│⭔ ${prefix}setmenu [option]
-│
-└───────⭓`
+                main = `
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃Lɪʙʀᴀʀʏ: Baileys-Md
+┃Tᴀɴɢɢᴀʟ Sᴇᴠᴇʀ: ${date}
+┃Wᴀᴋᴛᴜ Sᴇᴠᴇʀ: ${time2}
+┃Pʀᴇғɪx: ${prefix}
+┃Oᴡɴᴇʀ: Hᴀʀɪs S
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Hᴀɴᴢ Oғᴄ ──➤ ↶↷*
+╰•͙✩̣̣̣̣ 
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᘜᖇOᑌᑭ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴅᴇᴠᴏᴛᴇ
+⁙┃〲◦➛${prefix}ᴜᴘᴠᴏᴛᴇ
+⁙┃〲◦➛${prefix}ᴄᴇᴋᴠᴏᴛᴇ
+⁙┃〲◦➛${prefix}ʜᴀᴘᴜs ᴠᴏᴛᴇ
+⁙┃〲◦➛${prefix}ᴠᴏᴛᴇ [ᴛᴇxᴛ]
+⁙┃〲◦➛${prefix}ʟɪɴᴋɢʀᴏᴜᴘ
+⁙┃〲◦➛${prefix}ᴇᴘʜᴇᴍᴇʀᴀʟ [ᴏᴘᴛɪᴏɴ]
+⁙┃〲◦➛${prefix}sᴇᴛᴘᴘɢᴄ [ɪᴍᴀɢᴇ]
+⁙┃〲◦➛${prefix}sᴇᴛɴᴀᴍᴇ [ɴᴀᴍᴇ]
+⁙┃〲◦➛${prefix}sᴇᴛᴅᴇsᴄ [ᴛᴇxᴛ]
+⁙┃〲◦➛${prefix}ɢʀᴏᴜᴘ [ᴏᴘᴛɪᴏɴ]
+⁙┃〲◦➛${prefix}ᴇᴅɪᴛɪɴғᴏ [ᴏᴘᴛɪᴏɴ]
+⁙┃〲◦➛${prefix}ᴀᴅᴅ @ᴜsᴇʀ
+⁙┃〲◦➛${prefix}ᴋɪᴄᴋ @ᴜsᴇʀ
+⁙┃〲◦➛${prefix}ʜɪᴅᴇᴛᴀɢ [ᴛᴇxᴛ]
+⁙┃〲◦➛${prefix}ᴛᴀɢᴀʟʟ [ᴛᴇxᴛ]
+⁙┃〲◦➛${prefix}ᴛᴏᴛᴀɢ [ʀᴇᴘʟʏ]
+⁙┃〲◦➛${prefix}ᴀɴᴛɪʟɪɴᴋ [ᴏɴ/ᴏғғ]
+⁙┃〲◦➛${prefix}ᴍᴜᴛᴇ [ᴏɴ/ᴏғғ]
+⁙┃〲◦➛${prefix}ᴘʀᴏᴍᴏᴛᴇ @ᴜsᴇʀ
+⁙┃〲◦➛${prefix}ᴅᴇᴍᴏᴛᴇ @ᴜsᴇʀ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗯᗴᗷᘔOᑎᗴ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴘʟᴀʏsᴛᴏʀᴇ
+⁙┃〲◦➛${prefix}ɢsᴍᴀʀᴇɴᴀ
+⁙┃〲◦➛${prefix}ᴊᴀᴅᴡᴀʟʙɪᴏsᴋᴏᴘ
+⁙┃〲◦➛${prefix}ɴᴏᴡᴘʟᴀʏɪɴɢʙɪᴏsᴋᴏᴘ
+⁙┃〲◦➛${prefix}ᴀᴍɪɴɪᴏ
+⁙┃〲◦➛${prefix}ᴡᴀᴛᴛᴘᴀᴅ
+⁙┃〲◦➛${prefix}ᴡᴇʙᴛᴏᴏɴs
+⁙┃〲◦➛${prefix}ᴅʀᴀᴋᴏʀ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗪOᗯᑎᒪOᗩᗪ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴍᴇᴅɪᴀғɪʀᴇ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ᴛɪᴋᴛᴏᴋɴᴏᴡᴍ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ᴛɪᴋᴛᴏᴋᴍᴘ3 [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ɪɴsᴛᴀɢʀᴀᴍ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ᴛᴡɪᴛᴛᴇʀ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ᴛᴡɪᴛᴛᴇʀᴍᴘ3 [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ғᴀᴄᴇʙᴏᴏᴋ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ᴘɪɴᴛᴇʀᴇsᴛᴅʟ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ʏᴛᴍᴘ3 [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ʏᴛᴍᴘ4 [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ɢᴇᴛᴍᴜsɪᴄ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ɢᴇᴛᴠɪᴅᴇᴏ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ᴜᴍᴍᴀ [ᴜʀʟ]
+⁙┃〲◦➛${prefix}ᴊᴏᴏx [ᴜʀʟ]
+⁙┃〲◦➛${prefix}sᴏᴜɴᴅᴄʟᴏᴜᴅ [ᴜʀʟ]
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 Տᗴᗩᖇᑕᕼ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴘʟᴀʏ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ʏᴛs [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ɢᴏᴏɢʟᴇ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ɢɪᴍᴀɢᴇ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ᴘɪɴᴛᴇʀᴇsᴛ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ᴡᴀʟʟᴘᴀᴘᴇʀ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ᴡᴀʟʟᴘᴀᴘᴇʀʜᴘ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ᴡɪᴋɪᴍᴇᴅɪᴀ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ʏᴛsᴇᴀʀᴄʜ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}ʀɪɴɢᴛᴏɴᴇ [ǫᴜᴇʀʏ]
+⁙┃〲◦➛${prefix}sᴛᴀʟᴋ [ǫᴜᴇʀʏ]
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᑭᕼOTO ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}$ᴘʀᴇꜰɪx}ᴄᴏꜰꜰᴇ
+⁙┃〲◦➛${prefix}Qᴜᴏᴛᴇꜱᴀɴɪᴍᴇ
+⁙┃〲◦➛${prefix}ᴍᴏᴛɪᴠᴀꜱɪ
+⁙┃〲◦➛${prefix}ᴅɪʟᴀɴQᴜᴏᴛᴇ
+⁙┃〲◦➛${prefix}ʙᴜᴄɪɴQᴜᴏᴛᴇ
+⁙┃〲◦➛${prefix}ᴋᴀᴛᴀꜱᴇɴᴊᴀ
+⁙┃〲◦➛${prefix}ᴘᴜɪꜱɪ
+⁙┃〲◦➛${prefix}ᴄᴏᴜᴘʟᴇ
+⁙┃〲◦➛${prefix}ᴀɴɪᴍᴇ
+⁙┃〲◦➛${prefix}ᴡᴀɪꜰᴜ
+⁙┃〲◦➛${prefix}ʜᴜꜱʙᴜ
+⁙┃〲◦➛${prefix}ɴᴇᴋᴏ
+⁙┃〲◦➛${prefix}ʟᴜꜰꜰʏ
+⁙┃〲◦➛${prefix}ᴢᴏʀᴏ
+⁙┃〲◦➛${prefix}ᴏɴᴇᴘɪᴄᴇ
+⁙┃〲◦➛${prefix}ᴍɪᴋᴜ
+⁙┃〲◦➛${prefix}ʏᴏᴛꜱᴜʙᴀ
+⁙┃〲◦➛${prefix}ᴇʟᴀɪɴᴀ
+⁙┃〲◦➛${prefix}ᴛᴏᴍᴏʀɪ
+⁙┃〲◦➛${prefix}ɢɪɴᴛᴀᴍᴀ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 Tᗴ᙭T ᑭᖇO ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}3ᴅᴄʜʀɪꜱᴛᴍᴀꜱ
+⁙┃〲◦➛${prefix}3ᴅᴅᴇᴇᴘꜱᴇᴀ
+⁙┃〲◦➛${prefix}ᴀᴍᴇʀɪᴄᴀɴꜰʟᴀɢ
+⁙┃〲◦➛${prefix}3ᴅꜱᴄɪꜰɪ
+⁙┃〲◦➛${prefix}3ᴅʀᴀɪɴʙᴏᴡ
+⁙┃〲◦➛${prefix}3ᴅᴡᴀᴛᴇʀᴘɪᴘᴇ
+⁙┃〲◦➛${prefix}ʜᴀʟʟᴏᴡᴇᴇɴꜱᴋᴇʟᴇᴛᴏɴ
+⁙┃〲◦➛${prefix}ꜱᴋᴇᴛᴄʜ
+⁙┃〲◦➛${prefix}ʙʟᴜᴇᴄɪʀᴄᴜɪᴛ
+⁙┃〲◦➛${prefix}ꜱᴘᴀᴄᴇ
+⁙┃〲◦➛${prefix}ᴍᴇᴛᴀʟʟɪᴄ
+⁙┃〲◦➛${prefix}ꜰɪᴄᴛɪᴏɴ
+⁙┃〲◦➛${prefix}ɢʀᴇᴇɴʜᴏʀʀᴏʀ
+⁙┃〲◦➛${prefix}ᴛʀᴀɴꜱꜰᴏʀᴍᴇʀ
+⁙┃〲◦➛${prefix}ʙᴇʀʀʏ
+⁙┃〲◦➛${prefix}ᴛʜᴜɴᴅᴇʀ
+⁙┃〲◦➛${prefix}ᴍᴀɢᴍᴀ
+⁙┃〲◦➛${prefix}3ᴅᴄʀᴀᴄᴋᴇᴅꜱᴛᴏɴᴇ
+⁙┃〲◦➛${prefix}3ᴅɴᴇᴏɴʟɪɢʜᴛ
+⁙┃〲◦➛${prefix}ɪᴍᴘʀᴇꜱꜱɪᴠᴇɢʟɪᴛᴄʜ
+⁙┃〲◦➛${prefix}ɴᴀᴛᴜʀᴀʟʟᴇᴀᴠᴇꜱ
+⁙┃〲◦➛${prefix}ꜰɪʀᴇᴡᴏʀᴋꜱᴘᴀʀᴋʟᴇ
+⁙┃〲◦➛${prefix}ᴍᴀᴛʀɪx
+⁙┃〲◦➛${prefix}ᴅʀᴏᴘᴡᴀᴛᴇʀ
+⁙┃〲◦➛${prefix}ʜᴀʀʀʏᴘᴏᴛᴛᴇʀ
+⁙┃〲◦➛${prefix}ꜰᴏɢɢʏᴡɪɴᴅᴏᴡ
+⁙┃〲◦➛${prefix}ɴᴇᴏɴᴅᴇᴠɪʟꜱ
+⁙┃〲◦➛${prefix}ᴄʜʀɪꜱᴛᴍᴀꜱʜᴏʟɪᴅᴀʏ
+⁙┃〲◦➛${prefix}3ᴅɢʀᴀᴅɪᴇɴᴛ
+⁙┃〲◦➛${prefix}ʙʟᴀᴄᴋᴘɪɴᴋ
+⁙┃〲◦➛${prefix}ɢʟᴜᴇᴛᴇxᴛ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᑭᕼOTO O᙭Y ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ꜱʜᴀᴅᴏᴡ
+⁙┃〲◦➛${prefix}ʀᴏᴍᴀɴᴛɪᴄ
+⁙┃〲◦➛${prefix}ꜱᴍᴏᴋᴇ
+⁙┃〲◦➛${prefix}ʙᴜʀɴᴘᴀᴘᴘᴇʀ
+⁙┃〲◦➛${prefix}ɴᴀʀᴜᴛᴏ
+⁙┃〲◦➛${prefix}ʟᴏᴠᴇᴍꜱɢ
+⁙┃〲◦➛${prefix}ɢʀᴀꜱꜱᴍꜱɢ
+⁙┃〲◦➛${prefix}ʟᴏᴠᴇᴛᴇxᴛ
+⁙┃〲◦➛${prefix}ᴄᴏꜰꜰᴇᴄᴜᴘ
+⁙┃〲◦➛${prefix}ʙᴜᴛᴛᴇʀꜰʟʏ
+⁙┃〲◦➛${prefix}ʜᴀʀʀʏᴘᴏᴛᴛᴇʀ
+⁙┃〲◦➛${prefix}ʀᴇᴛʀᴏʟᴏʟ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗴᑭᕼOTO ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ꜰꜰᴄᴏᴠᴇʀ
+⁙┃〲◦➛${prefix}ᴄʀᴏꜱꜱꜰɪʀᴇ
+⁙┃〲◦➛${prefix}ɢᴀʟᴀxʏ
+⁙┃〲◦➛${prefix}ɢʟᴀꜱꜱ
+⁙┃〲◦➛${prefix}ɴᴇᴏɴ
+⁙┃〲◦➛${prefix}ʙᴇᴀᴄʜ
+⁙┃〲◦➛${prefix}ʙʟᴀᴄᴋᴘɪɴᴋ
+⁙┃〲◦➛${prefix}ɪɢᴄᴇʀᴛɪꜰɪᴄᴀᴛᴇ
+⁙┃〲◦➛${prefix}ʏᴛᴄᴇʀᴛɪꜰɪᴄᴀᴛᴇ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᖴᑌᑎ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ꜱɪᴍɪʜ
+⁙┃〲◦➛${prefix}ʜᴀʟᴀʜ
+⁙┃〲◦➛${prefix}ʜɪʟɪʜ
+⁙┃〲◦➛${prefix}ʜᴜʟᴜʜ
+⁙┃〲◦➛${prefix}ʜᴇʟᴇʜ
+⁙┃〲◦➛${prefix}ʜᴏʟᴏʜ
+⁙┃〲◦➛${prefix}ᴊᴀᴅɪᴀɴ
+⁙┃〲◦➛${prefix}ᴊᴏᴅᴏʜᴋᴜ
+⁙┃〲◦➛${prefix}ᴅᴇʟᴛᴛᴛ
+⁙┃〲◦➛${prefix}ᴛɪᴄᴛᴀᴄᴛᴏᴇ
+⁙┃〲◦➛${prefix}ꜰᴀᴍɪʟʏ100
+⁙┃〲◦➛${prefix}ᴛᴇʙᴀᴋ [ᴏᴘᴛɪᴏɴ]
+⁙┃〲◦➛${prefix}ᴍᴀᴛʜ [ᴍᴏᴅᴇ]
+⁙┃〲◦➛${prefix}ꜱᴜɪᴛᴘᴠᴘ [@ᴛᴀɢ]
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᑭᖇIᗰᗷOᑎ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ɴᴏᴍᴏʀʜᴏᴋɪ
+⁙┃〲◦➛${prefix}ᴀʀᴛɪᴍɪᴍᴘɪ
+⁙┃〲◦➛${prefix}ᴀʀᴛɪɴᴀᴍᴀ
+⁙┃〲◦➛${prefix}ʀᴀᴍᴀʟᴊᴏᴅᴏʜ
+⁙┃〲◦➛${prefix}ʀᴀᴍᴀʟᴊᴏᴅᴏʜʙᴀʟɪ
+⁙┃〲◦➛${prefix}ꜱᴜᴀᴍɪɪꜱᴛʀɪ
+⁙┃〲◦➛${prefix}ʀᴀᴍᴀʟᴄɪɴᴛᴀ
+⁙┃〲◦➛${prefix}ᴄᴏᴄᴏᴋɴᴀᴍᴀ
+⁙┃〲◦➛${prefix}ᴘᴀꜱᴀɴɢᴀɴ
+⁙┃〲◦➛${prefix}ᴊᴀᴅɪᴀɴɴɪᴋᴀʜ
+⁙┃〲◦➛${prefix}ꜱɪꜰᴀᴛᴜꜱᴀʜᴀ
+⁙┃〲◦➛${prefix}ʀᴇᴢᴇᴋɪ
+⁙┃〲◦➛${prefix}ᴘᴇᴋᴇʀᴊᴀᴀɴ
+⁙┃〲◦➛${prefix}ɴᴀꜱɪʙ
+⁙┃〲◦➛${prefix}ᴘᴇɴʏᴀᴋɪᴛ
+⁙┃〲◦➛${prefix}ᴛᴀʀᴏᴛ
+⁙┃〲◦➛${prefix}ꜰᴇɴɢꜱʜᴜɪ
+⁙┃〲◦➛${prefix}ʜᴀʀɪʙᴀɪᴋ
+⁙┃〲◦➛${prefix}ʜᴀʀɪꜱᴀɴɢᴀʀ
+⁙┃〲◦➛${prefix}ʜᴀʀɪꜱɪᴀʟ
+⁙┃〲◦➛${prefix}ɴᴀɢᴀʜᴀʀɪ
+⁙┃〲◦➛${prefix}ᴀʀᴀʜʀᴇᴢᴇᴋɪ
+⁙┃〲◦➛${prefix}ᴘᴇʀᴜɴᴛᴜɴɢᴀɴ
+⁙┃〲◦➛${prefix}ᴡᴇᴛᴏɴ
+⁙┃〲◦➛${prefix}ᴋᴀʀᴀᴋᴛᴇʀ
+⁙┃〲◦➛${prefix}ᴋᴇʙᴇʀᴜɴᴛᴜɴɢᴀɴ
+⁙┃〲◦➛${prefix}ᴍᴇᴍᴀɴᴄɪɴɢ
+⁙┃〲◦➛${prefix}ᴍᴀꜱᴀꜱᴜʙᴜʀ
+⁙┃〲◦➛${prefix}ᴢᴏᴅɪᴀᴋ
+⁙┃〲◦➛${prefix}ꜱʜɪᴏ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᑕOᑎᐯᗴᖇT ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴀᴛᴛᴘ
+⁙┃〲◦➛${prefix}ᴛᴛᴘ
+⁙┃〲◦➛${prefix}ᴛᴏɪᴍᴀɢᴇ
+⁙┃〲◦➛${prefix}ʀᴇᴍᴏᴠᴇʙɢ
+⁙┃〲◦➛${prefix}ꜱᴛɪᴄᴋᴇʀ
+⁙┃〲◦➛${prefix}ꜱᴛɪᴄᴋᴇʀᴡᴍ
+⁙┃〲◦➛${prefix}ᴇᴍᴏᴊɪᴍɪx
+⁙┃〲◦➛${prefix}ᴇᴍᴏᴊɪᴍɪx2
+⁙┃〲◦➛${prefix}ᴛᴏᴠɪᴅᴇᴏ
+⁙┃〲◦➛${prefix}ᴛᴏɢɪꜰ
+⁙┃〲◦➛${prefix}ᴛᴏᴜʀʟ
+⁙┃〲◦➛${prefix}ᴛᴏᴠɴ
+⁙┃〲◦➛${prefix}ᴛᴏᴍᴘ3
+⁙┃〲◦➛${prefix}ᴛᴏᴀᴜᴅɪᴏ
+⁙┃〲◦➛${prefix}ᴇʙɪɴᴀʀʏ
+⁙┃〲◦➛${prefix}ᴅʙɪɴᴀʀʏ
+⁙┃〲◦➛${prefix}ꜱᴛʏʟᴇᴛᴇxᴛ
+⁙┃〲◦➛${prefix}ꜱᴍᴇᴍᴇ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗰᗩIᑎ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴘɪɴɢ
+⁙┃〲◦➛${prefix}ᴏᴡɴᴇʀ
+⁙┃〲◦➛${prefix}ᴍᴇɴᴜ / ${ᴘʀᴇꜰɪx}ʜᴇʟᴘ / ${ᴘʀᴇꜰɪx}?
+⁙┃〲◦➛${prefix}ᴅᴇʟᴇᴛᴇ
+⁙┃〲◦➛${prefix}ɪɴꜰᴏᴄʜᴀᴛ
+⁙┃〲◦➛${prefix}Qᴜᴏᴛᴇᴅ
+⁙┃〲◦➛${prefix}ʟɪꜱᴛᴘᴄ
+⁙┃〲◦➛${prefix}ʟɪꜱᴛɢᴄ
+⁙┃〲◦➛${prefix}ʟɪꜱᴛᴏɴʟɪɴᴇ
+⁙┃〲◦➛${prefix}ꜱᴘᴇᴇᴅᴛᴇꜱᴛ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗪᗩTᗩᗷᗩՏᗴ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ꜱᴇᴛᴄᴍᴅ
+⁙┃〲◦➛${prefix}ʟɪꜱᴛᴄᴍᴅ
+⁙┃〲◦➛${prefix}ᴅᴇʟᴄᴍᴅ
+⁙┃〲◦➛${prefix}ʟᴏᴄᴋᴄᴍᴅ
+⁙┃〲◦➛${prefix}ᴀᴅᴅᴍꜱɢ
+⁙┃〲◦➛${prefix}ʟɪꜱᴛᴍꜱɢ
+⁙┃〲◦➛${prefix}ɢᴇᴛᴍꜱɢ
+⁙┃〲◦➛${prefix}ᴅᴇʟᴍꜱɢ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗩᑎOᑎYᗰOᑌՏ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ᴀɴᴏɴʏᴍᴏᴜꜱ
+⁙┃〲◦➛${prefix}ꜱᴛᴀʀᴛ
+⁙┃〲◦➛${prefix}ɴᴇxᴛ
+⁙┃〲◦➛${prefix}ᴋᴇʟᴜᴀʀ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 IՏᒪᗩᗰIᑕ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ɪQʀᴀ
+⁙┃〲◦➛${prefix}ʜᴀᴅɪꜱᴛ
+⁙┃〲◦➛${prefix}ᴀʟQᴜʀᴀɴ
+⁙┃〲◦➛${prefix}ᴊᴜᴢᴀᴍᴍᴀ
+⁙┃〲◦➛${prefix}ᴛᴀꜰꜱɪʀꜱᴜʀᴀʜ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᐯOIᑕᗴ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ʙᴀꜱꜱ
+⁙┃〲◦➛${prefix}ʙʟᴏᴡɴ
+⁙┃〲◦➛${prefix}ᴅᴇᴇᴘ
+⁙┃〲◦➛${prefix}ᴇᴀʀʀᴀᴘᴇ
+⁙┃〲◦➛${prefix}ꜰᴀꜱᴛ
+⁙┃〲◦➛${prefix}ꜰᴀᴛ
+⁙┃〲◦➛${prefix}ɴɪɢʜᴛᴄᴏʀᴇ
+⁙┃〲◦➛${prefix}ʀᴇᴠᴇʀꜱᴇ
+⁙┃〲◦➛${prefix}ʀᴏʙᴏᴛ
+⁙┃〲◦➛${prefix}ꜱʟᴏᴡ
+⁙┃〲◦➛${prefix}ᴛᴜᴘᴀɪ
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 Oᗯᑎᗴᖇ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ʀᴇᴀᴄᴛ [ᴇᴍᴏᴊɪ]
+⁙┃〲◦➛${prefix}ᴄʜᴀᴛ [ᴏᴘᴛɪᴏɴ]
+⁙┃〲◦➛${prefix}ᴊᴏɪɴ [ʟɪɴᴋ]
+⁙┃〲◦➛${prefix}ʟᴇᴀᴠᴇ
+⁙┃〲◦➛${prefix}ʙʟᴏᴄᴋ @ᴜꜱᴇʀ
+⁙┃〲◦➛${prefix}ᴜɴʙʟᴏᴄᴋ @ᴜꜱᴇʀ
+⁙┃〲◦➛${prefix}ʙᴄɢʀᴏᴜᴘ [ᴛᴇxᴛ]
+⁙┃〲◦➛${prefix}ʙᴄᴀʟʟ [ᴛᴇxᴛ]
+⁙┃〲◦➛${prefix}ꜱᴇᴛᴘᴘʙᴏᴛ [ɪᴍᴀɢᴇ]
+⁙┃〲◦➛${prefix}ꜱᴇᴛᴇxɪꜰ
+⁙┃〲◦➛${prefix}ꜱᴇᴛᴍᴇɴᴜ [ᴏᴘᴛɪᴏɴ]`
+▬▭▬ ▬▭ ✦✧✦ ▬▭▬ ▬▭`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Sᴄʀɪᴘᴛ',
+                                    url: 'https://ponselharian.com/r0o9ud6S4T'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+6281546767920'
+                                    displayText: 'Oᴡɴᴇʀ',
+                                    phoneNumber: '+35312338989'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
+                                    displayText: 'Sᴛᴀᴛᴜs Bᴏᴛ',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                                    displayText: 'Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
+                                    displayText: 'Yᴏᴜᴛᴜʙᴇ',
                                     id: 'sc'
                                 }
                             }]
-                            hisoka.send5ButLoc(m.chat, main, "@SHIELD-BOT", fs.readFileSync('./menu1.jpeg'), btn)
+                            hisoka.send5ButLoc(m.chat, main, "@HANZ々OFC彡-[MD]", fs.readFileSync('./menu1.jpeg'), btn)
                      }
             break
 case 'bugv1':
+if(!isCreator) return m.reply("Khusus Owner")
 let fdoc = {
 key : {
 participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
@@ -3493,6 +3439,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fdoc})
 break
 case 'bugv2':
+if(!isCreator) return m.reply("Khusus Owner")
 let foto = { 
 key: { 
 fromMe: false, 
@@ -3510,6 +3457,7 @@ message: {
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foto})
 break
 case 'bugv3':
+if(!isCreator) return m.reply("Khusus Owner")
 let fvoc = {
 key: { 
 fromMe: false,
@@ -3526,6 +3474,7 @@ message: {
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fvoc})
 break
 case 'bugv4':
+if(!isCreator) return m.reply("Khusus Owner")
 let fgif = { 
 key: {
 fromMe: false,
@@ -3543,6 +3492,7 @@ message: { "videoMessage": {
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgif})
 break
 case 'bugv5':
+if(!isCreator) return m.reply("Khusus Owner")
 let floc = {
 key : {
 participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
@@ -3557,6 +3507,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:floc})
 break 
 case 'bugv6':
+if(!isCreator) return m.reply("Khusus Owner")
 let ftoko = { 
 key: { 
 fromMe: false, 
@@ -3578,6 +3529,7 @@ message: {
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:ftoko})
 break
 case 'bugv7':
+if(!isCreator) return m.reply("Khusus Owner")
 let foncevid = { 
 key: {
 fromMe: false, 
@@ -3593,6 +3545,7 @@ viewOnce: true
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:foncevid})
 break
 case 'bugv8':
+if(!isCreator) return m.reply("Khusus Owner")
 let fonceimg = {
 key: {
 fromMe: false,
@@ -3607,6 +3560,7 @@ viewOnce: true
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fonceimg})
 break
 case 'bugv9':
+if(!isCreator) return m.reply("Khusus Owner")
 let fgc = { 
 key: {
 fromMe: false,
@@ -3622,6 +3576,7 @@ participant: `0@s.whatsapp.net`, ...({ remoteJid: "" })
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fgc})
 break
 case 'bugv10':
+if(!isCreator) return m.reply("Khusus Owner")
 let stic = { 
 "key": {
 "participant": `0@s.whatsapp.net`,
@@ -3649,6 +3604,7 @@ let stic = {
  break
 //Bug quoted versi gua ini gua campuran sama yg virkon crash home yg udh punah itu🗿
 case 'bugv11':
+if(!isCreator) return m.reply("Khusus Owner")
 let fkon = { 
 key: { 
 fromMe: false, 
@@ -3696,7 +3652,8 @@ a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe
 	hisoka.relayMessage(m.chat, troli.message, { messageId: troli.key.id, a})
 	}
 	break
-case 'bugbutton': {
+case 'bugbutton': 
+if(!isCreator) return m.reply("Khusus Owner") {
             let buttons = [
 {buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
                 ]
@@ -3713,14 +3670,15 @@ case 'bugbutton': {
 ⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
 ⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ${virtex1(prefix)}`,
-                    footer: virtex1(prefix),
+                    footer: "COK"
                     buttons: buttons,
                     headerType: 4
                 }
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'sendreaksi' : {
+case 'sendreaksi' :
+if(!isCreator) return m.reply("Khusus Owner") {
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                 await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
@@ -3752,7 +3710,8 @@ m.reply(`SUCCES`)
                 await sleep(20)
             }
                 break
-case 'colidek' : {
+case 'colidek' : 
+if(!isCreator) return m.reply("Khusus Owner") {
                     a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
