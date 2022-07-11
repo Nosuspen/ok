@@ -3874,8 +3874,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }
 }, contextInfo:{}}) 
-hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})
-	}
+hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})	
 	break
 case 'jadikatalog':
 imeg = hisoka.message.imageMessage
