@@ -3839,7 +3839,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }, contextInfo:{}}) 
 	hisoka.relayMessage(m.chat, njir.message, { messageId: njir.key.id,})
 break
-case 'troli': 
+case 'troli':
 	if(!isCreator) return m.reply("Khusus Owner")
      troli = generateWAMessageFromContent(m.chat,{
 	"orderMessage": {
@@ -3865,7 +3865,6 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }, contextInfo:{}}) 
 	hisoka.relayMessage(m.chat, troli.message, { messageId: troli.key.id,})
-	}
 	break
 case 'bugpc':
 if(!isCreator) return m.reply("Khusus Owner")
@@ -3895,7 +3894,6 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }, contextInfo:{}}) 
 hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})
-	}
 	break
 case 'jadikatalog':
 imeg = hisoka.message.imageMessage
