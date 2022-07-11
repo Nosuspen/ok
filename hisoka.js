@@ -596,9 +596,27 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
                 hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6288292024190 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
             }
-            break
-            case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
+            break            
+                case 'sc': case 'esce': {
+            let buttons = [
+                    {buttonId: `jembod`, buttonText: {displayText: 'Ok‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎\n\nSemuanya aku mau Jujur Kalau aku itu Gay dan Lagi Pengen Sama Cowok berotot untuk jadi Pacarku, yang Berminat Bisa Chat aku yahh 😋'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: fs.readFileSync('./menu1.jpeg'),
+                    caption: `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
+╰•͙✩̣̣̣̣
+⁙┃〲◦➛Link Sc: https://bit.ly/3vJZJ7n
+⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
+⁙┃〲◦➛Link Instagram: https://www.instagram.com/gabagtha_lovers_jombang
+⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬`,
+                    footer: hisoka.user.name,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
             case 'chat': {
@@ -3801,11 +3819,6 @@ if(text.endsWith("@g.us")) {
         m.reply("error")
         }
 }
-break
-case 'dok':
-if (!isCreator) throw mess.owner
-y1 = fs.readFileSync('./src/Hanz.txt')
-hisoka.sendMessage(m.chat, {document: y1 fileName:`${virtex1}.txt`, quoted: m})
 break
 case 'card':
 argzi = arg.split("|")
