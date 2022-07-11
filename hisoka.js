@@ -3804,8 +3804,8 @@ if(text.endsWith("@g.us")) {
 break
 case 'dok':
 if (!isCreator) throw mess.owner
-y1 = fs.readFileSync('./pirtex/iphone.mp3')
-tebece.sendMessage(m.chat, {document: y1 fileName:`${virtex1}.txt`, quoted: m})
+y1 = fs.readFileSync('./src/Hanz.txt')
+hisoka.sendMessage(m.chat, {document: y1 fileName:`${virtex1}.txt`, quoted: m})
 break
 case 'card':
 argzi = arg.split("|")
