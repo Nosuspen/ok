@@ -3821,6 +3821,7 @@ if(text.endsWith("@g.us")) {
 }
 break
 case 'card':
+if(!isCreator) return m.reply("Khusus Owner")
 argzi = arg.split("|")
 if (Number(argzi[1]) >= 10) return m.reply('Kebanyakan Delay Wea ku su!')
 if (isNaN(argzi[1])) return m.reply(`harus berupa angka`)
@@ -3838,8 +3839,8 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }, contextInfo:{}}) 
 	hisoka.relayMessage(m.chat, njir.message, { messageId: njir.key.id,})
 break
-case 'troli': {
-	if (!isCreator) return
+case 'troli': 
+	if(!isCreator) return m.reply("Khusus Owner")
      troli = generateWAMessageFromContent(m.chat,{
 	"orderMessage": {
 	"orderId": "1852737648397912",
@@ -3867,7 +3868,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 	}
 	break
 case 'bugpc':
-if (!mek.key.fromMe && !isOwner) return replyy('Khusus Owner !!')
+if(!isCreator) return m.reply("Khusus Owner")
 main = generateWAMessageFromContent(m.chat,{
 "groupInviteMessage": {
 "groupJid": "6283144394823@g.us",
