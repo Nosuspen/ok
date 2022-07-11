@@ -3204,11 +3204,6 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
 ⁙┃〲◦➛${prefix}ᴛʀᴏʟɪ
 ⁙┃〲◦➛${prefix}ʙᴜɢʟɪsᴛ
 ⁙┃〲◦➛${prefix}ʙᴜɢʀᴇᴀᴄ
-⁙┃〲◦➛${prefix}
-⁙┃〲◦➛${prefix}
-⁙┃〲◦➛${prefix}
-⁙┃〲◦➛${prefix}
-⁙┃〲◦➛${prefix}
 ⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ⁙┃〲 *『 ᗩTTᗩᑕK ᗰᗴᑎᑌ 』*
 ⁙┃〲◦➛${prefix}sᴇɴᴅʀᴇᴀᴄ
