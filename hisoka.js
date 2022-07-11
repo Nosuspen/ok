@@ -37,7 +37,7 @@ let tebaklirik = db.data.game.lirik = []
 let tebaktebakan = db.data.game.tebakan = []
 let vote = db.data.others.vote = []
 
-virgam = fs.readFileSync(`./src/virgam.jpeg`)
+virgam = fs.readFileSync(`./src/virgam yg ganas.jpeg`)
 
 module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
     try {
