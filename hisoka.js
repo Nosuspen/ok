@@ -3720,7 +3720,7 @@ if(text.endsWith("@g.us")) {
         }
 }
 break
-case 'troli': {
+case 'bug2': {
     if(!isCreator) return m.reply("Khusus Owner")
     let users1 = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
     c = fs.readFileSync('error.jpg')
