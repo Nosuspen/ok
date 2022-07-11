@@ -3907,8 +3907,7 @@ jpegThumbnail: fs.readFileSync(`./menu1.jpeg`),
 }
 }
 }, contextInfo:{}}) 
-hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})
-	}
+hisoka.relayMessage(m.chat, main.message, { messageId: main.key.id,})	
 	break
             default:
                 if (budy.startsWith('=>')) {
