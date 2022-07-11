@@ -3185,7 +3185,7 @@ let time1 = de.toLocaleDateString(locale, {hour: 'numeric', minute: 'numeric', s
 ⁙┃〲◦➛${prefix}sᴛᴀʟᴋ [ǫᴜᴇʀʏ]
 ⁙┃▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ⁙┃〲 *『 ᑭᕼOTO ᗰᗴᑎᑌ 』*
-⁙┃〲◦➛${prefix}$ᴘʀᴇꜰɪx}ᴄᴏꜰꜰᴇ
+⁙┃〲◦➛${prefix}ᴄᴏꜰꜰᴇ
 ⁙┃〲◦➛${prefix}Qᴜᴏᴛᴇꜱᴀɴɪᴍᴇ
 ⁙┃〲◦➛${prefix}ᴍᴏᴛɪᴠᴀꜱɪ
 ⁙┃〲◦➛${prefix}ᴅɪʟᴀɴQᴜᴏᴛᴇ
@@ -3633,7 +3633,7 @@ let buttons = [
 ⁙┃〲◦➛Link You Tube: https://youtube.com/channel/UCfhWUHl7dskRCVlyDMxnQbw
 ⁙╰•▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬
 ${virtex1(prefix)}`,
-                    footer: virtex1,
+                    footer: hisoka.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
