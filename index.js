@@ -418,7 +418,7 @@ hisoka.sendImage(anu.id, 'Leaving.png', capti1)
        "hydratedButtons": but
        }
        }
-       }, options)
+       }, options), { quoted })
        hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
       }
 
