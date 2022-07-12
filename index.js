@@ -63,17 +63,6 @@ global.loadDatabase = async function loadDatabase() {
   global.db.chain = _.chain(global.db.data)
 }
 loadDatabase()
-const floc = {
-key : {
-participant : '0@s.whatsapp.net'
-},
-message: {
-liveLocationMessage: {
-caption: `By: メʜᴀɴᴢ ᴏꜰᴄメ`,
-jpegThumbnail: thumb
-}
-}
-}
 const {
     msgs,
     pluginLoader,
@@ -419,7 +408,6 @@ hisoka.sendImage(anu.id, 'Leaving.png', capti1)
        }
        }
        }, options)
-       { quoted: floc,
        hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
       }
 
@@ -516,7 +504,6 @@ hisoka.sendImage(anu.id, 'Leaving.png', capti1)
             }
             }
             }), options)
-            quoted: floc,
             hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
